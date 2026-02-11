@@ -1,1727 +1,433 @@
-####################################
-# 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2026-01-20 08:24:16
-# 使用模版：V2RaySE 默认模版
-# 节点数量：229
-####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
-mixed-port: 7890
+port: 7890
+socks-port: 7891
 allow-lan: true
+mode: Rule
 log-level: info
-external-controller: 0.0.0.0:9090
-dns:
-  enabled: true
-  listen: 0.0.0.0:1053
-  ipv6: true
-  default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - '*.lan'
-    - '*.linksys.com'
-    - '*.linksyssmartwifi.com'
-    - swscan.apple.com
-    - mesu.apple.com
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time1.*.com
-    - time2.*.com
-    - time3.*.com
-    - time4.*.com
-    - time5.*.com
-    - time6.*.com
-    - time7.*.com
-    - ntp.*.com
-    - ntp.*.com
-    - ntp1.*.com
-    - ntp2.*.com
-    - ntp3.*.com
-    - ntp4.*.com
-    - ntp5.*.com
-    - ntp6.*.com
-    - ntp7.*.com
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - +.pool.ntp.org
-    - time1.cloud.tencent.com
-    - +.music.163.com
-    - '*.126.net'
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - '*.kuwo.cn'
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - +.y.qq.com
-    - +.music.tc.qq.com
-    - aqqmusic.tc.qq.com
-    - +.stream.qqmusic.qq.com
-    - '*.xiami.com'
-    - +.music.migu.cn
-    - +.srv.nintendo.net
-    - +.stun.playstation.net
-    - xbox.*.microsoft.com
-    - +.xboxlive.com
-    - localhost.ptlogin2.qq.com
-    - proxy.golang.org
-    - stun.*.*
-    - stun.*.*.*
-    - '*.mcdn.bilivideo.cn'
-  nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
-  fallback-filter:
-    geoip: false
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
-
+external-controller: :9090
 proxies:
-  - {"name":"分享日记_1","type":"vmess","server":"82.198.246.97","port":180,"cipher":"auto","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"分享日记_2","type":"vmess","server":"2001:bc8:32d7:302::10","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN"}}
-  - {"name":"分享日记_3","type":"vmess","server":"94.232.247.165","port":45653,"cipher":"auto","uuid":"9e91d19a-c73f-4276-adbc-b337c374259c","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"分享日记_4","type":"vmess","server":"2001:bc8:32d7:302::14","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560","headers":{"host":"TABRIZ.NET"}}}
-  - {"name":"分享日记_5","type":"vmess","server":"2001:bc8:32d7:302::15","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1","headers":{"host":"TURK.NET"}}}
-  - {"name":"分享日记_6","type":"vmess","server":"2001:bc8:32d7:302::17","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1","headers":{"host":"AZERB.NET"}}}
-  - {"name":"分享日记_7","type":"vmess","server":"2001:bc8:32d7:302::11","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560","headers":{"host":"TABRIZ.NET"}}}
-  - {"name":"分享日记_8","type":"vmess","server":"v2ray.codefyinc.com","port":443,"cipher":"auto","uuid":"2c981164-9b93-4bca-94ff-b78d3f8498d7","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/vmessws","headers":{"host":"v2ray.codefyinc.com"}}}
-  - {"name":"分享日记_9","type":"vmess","server":"209.126.84.189","port":443,"cipher":"auto","uuid":"2c981164-9b93-4bca-94ff-b78d3f8498d7","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/vmessws","headers":{"host":"209.126.84.189"}}}
-  - {"name":"分享日记_10","type":"vmess","server":"5.83.150.108","port":39316,"cipher":"auto","uuid":"254551f6-ec28-4938-ad0e-0aa4aa1965ec","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"imafake.locker"}}}
-  - {"name":"分享日记_11","type":"vmess","server":"2001:bc8:32d7:302::16","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1","headers":{"host":"AZERB.NET"}}}
-  - {"name":"分享日记_12","type":"vmess","server":"51.79.102.253","port":80,"cipher":"auto","uuid":"58fe1542-5290-40ad-815a-77707a81afe5","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/IOebhLMhl1CTbFHbL95myfRX2"}}
-  - {"name":"分享日记_13","type":"vmess","server":"n1753598451.74qxv.top","port":443,"cipher":"auto","uuid":"9798678f-5b8c-4ff1-bbdd-b9b5c1539de0","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"n1753598451.74qxv.top"}}}
-  - {"name":"分享日记_14","type":"vmess","server":"217.69.5.32","port":443,"cipher":"auto","uuid":"ec4c349c-b3c6-4cff-be63-01eaad1dc098","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"分享日记_15","type":"vmess","server":"15.235.41.200","port":80,"cipher":"auto","uuid":"58fe1542-5290-40ad-815a-77707a81afe5","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/IOebhLMhl1CTbFHbL95myfRX2"}}
-  - {"name":"分享日记_16","type":"vmess","server":"frankfurt01.zgjok.com","port":443,"cipher":"auto","uuid":"b71579b1-6593-426d-90ac-f002fa96ade1","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"frankfurt01.zgjok.com"}}}
-  - {"name":"分享日记_17","type":"vmess","server":"n1761214910.74qxv.top","port":443,"cipher":"auto","uuid":"011c4670-cdde-44fb-b9be-8a1e27af26c9","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"n1761214910.74qxv.top"}}}
-  - {"name":"分享日记_18","type":"vmess","server":"n1761214915.mv7wh.tech","port":443,"cipher":"auto","uuid":"1f2daf43-ff90-4df9-9276-dfb8486d72bc","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"n1761214915.mv7wh.tech"}}}
-  - {"name":"分享日记_19","type":"vmess","server":"89.31.120.192","port":443,"cipher":"auto","uuid":"44537595-9ccc-4b83-8936-5f9ad3229019","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"分享日记_20","type":"vmess","server":"sy4.620720.xyz","port":443,"cipher":"auto","uuid":"516d8a7a-3f0b-41d3-bad0-246116381516","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"sy4.620720.xyz"}}}
-  - {"name":"分享日记_21","type":"vmess","server":"chatgpt.com","port":443,"cipher":"auto","uuid":"a892fed1-3409-4349-a56d-493727550057","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560","headers":{"host":"newtest32.ultimateman.ir"}}}
-  - {"name":"分享日记_22","type":"vmess","server":"38.107.234.57","port":80,"cipher":"auto","uuid":"567f4be5-12ab-42e1-b8d9-db6fd1fdd31c","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/vmess/"}}
-  - {"name":"分享日记_23","type":"vmess","server":"v30.hdacd.com","port":30830,"cipher":"auto","uuid":"cbb3f877-d1fb-344c-87a9-d153bffd5484","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"分享日记_24","type":"vless","server":"108.162.198.24","port":2096,"uuid":"55d9ec38-1b8a-454b-981a-6acfe8f56d8c","tls":true,"servername":"sni.meibidi.pp.ua","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_25","type":"vless","server":"cloudflare.182682.xyz","port":443,"uuid":"3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97","tls":true,"servername":"l.ayovo.netlib.re","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_26","type":"vless","server":"222.102.51.111","port":51698,"udp":true,"uuid":"5d42cfef-0556-4f0c-bfb7-161aef500ab5","tls":true,"servername":"lenovoglobal.com","flow":"xtls-rprx-vision","network":"grpc","reality-opts":{"public-key":"PPZbDAYSwCYnPCF8BxguTFfAAZTnLnzpsHePCkGZYxo","short-id":"34"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_27","type":"vless","server":"25.129.199.205","port":2053,"uuid":"8a07740f-b932-4372-a3a2-ed91f184cd33","tls":true,"servername":"KhAmeneI.DPdNs.OrG","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_28","type":"vless","server":"25.129.197.138","port":2053,"uuid":"8a07740f-b932-4372-a3a2-ed91f184cd33","tls":true,"servername":"KhAmeneI.DPdNs.OrG","network":"ws","ws-opts":{"path":"/eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"}}
-  - {"name":"分享日记_29","type":"vless","server":"adf.ly","port":443,"uuid":"1679af35-6dd6-4c09-ae3b-18f239217f3e","tls":true,"servername":"rayan-007.parvin.dpdns.org","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_30","type":"vless","server":"154.17.227.191","port":443,"uuid":"55d9ec38-1b8a-454b-981a-6acfe8f56d8c","tls":true,"servername":"sni.meibidi.pp.ua","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_31","type":"vless","server":"162.159.45.232","port":443,"uuid":"3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97","tls":true,"servername":"l.ayovo.netlib.re","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_32","type":"vless","server":"exclavevirtualvless.alirexaxulst.workers.dev","port":443,"uuid":"9e25693f-a2a4-4c54-a6d0-3eb9ed4fbf99","tls":true,"servername":"exclavevirtualvless.alirexaxulst.workers.dev","network":"ws","ws-opts":{"path":"ws"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_33","type":"vless","server":"www.visa.com","port":443,"uuid":"55d9ec38-1b8a-454b-981a-6acfe8f56d8c","tls":true,"servername":"sni.meibidi.pp.ua","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_34","type":"vless","server":"chatgpt.com","port":443,"uuid":"a202a47d-dee6-462c-b545-bb4977cf9eb1","tls":true,"servername":"639035008357152103.accord-amsjt.info","network":"ws","ws-opts":{"path":"/igbvczws"}}
-  - {"name":"分享日记_35","type":"vless","server":"1password.com","port":443,"uuid":"d2d0f796-edb0-427a-af32-ae360679f9e7","tls":true,"servername":"rayan-007.foton.dpdns.org","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_36","type":"vless","server":"162.159.16.63","port":443,"uuid":"3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97","tls":true,"servername":"l.ayovo.netlib.re","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_37","type":"vless","server":"pavosilene.qzz.io","port":443,"uuid":"3ceb7c2b-8aed-41b3-ad42-ba1e1a69bae5","tls":true,"servername":"pavosilene.qzz.io","network":"ws","ws-opts":{"path":"/79.141.170.138:443"}}
-  - {"name":"分享日记_38","type":"vless","server":"140.99.233.58","port":80,"uuid":"046da250-d5ef-4867-9095-302477d54d20","tls":false,"servername":"feng.ipy29c99.workers.dev","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_39","type":"vless","server":"45.131.5.111","port":80,"uuid":"d6ff33a6-03bf-4338-8a63-62ab284a9466","tls":false,"servername":"feng4.l1ut8bi9.workers.dev","network":"ws","ws-opts":{"path":"/Telegram"}}
-  - {"name":"分享日记_40","type":"vless","server":"medium.com","port":443,"uuid":"f2a73750-3087-48ff-a763-1348c15dce68","tls":true,"servername":"rAyAn-007.mAxImA.DpDnS.OrG","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_41","type":"vless","server":"162.159.17.203","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"servername":"ww1.sgxaniu.qzz.io","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_42","type":"vless","server":"heavenlyblue.qzz.io","port":443,"uuid":"d577ad65-4e97-4b4f-8adf-29340520318c","tls":true,"servername":"heavenlyblue.qzz.io","network":"ws","ws-opts":{"path":"/64.110.70.205:23022"}}
-  - {"name":"分享日记_43","type":"vless","server":"162.159.7.223","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"servername":"ww1.sgxaniu.qzz.io","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_44","type":"vless","server":"104.24.206.21","port":80,"uuid":"ffa11e82-fa9b-4be1-81a9-c1d48a363df8","tls":false,"servername":"fancy-sky-db95.mehradrivaldo.workers.dev","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_45","type":"vless","server":"104.17.15.87","port":80,"uuid":"f929cc78-e2a1-4ce3-8051-3e9538405144","tls":false,"servername":"britain.xydcqd.workers.dev","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_46","type":"vless","server":"141.101.120.97","port":8880,"uuid":"8a13ed66-d70a-4d32-8052-cbd8e0c5f7f4","tls":false,"servername":"joss.gvpn2.web.id","network":"ws","ws-opts":{"path":"/Free-VPN-CF-Geo-Project/HK"}}
-  - {"name":"分享日记_47","type":"vless","server":"019.electrocellco-cf-019.workers.dev","port":80,"uuid":"94671f42-fdd3-4503-a3e6-bda4a2527560","tls":false,"servername":"019.electrocellco-cf-019.workers.dev","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_48","type":"vless","server":"104.17.254.236","port":80,"uuid":"f929cc78-e2a1-4ce3-8051-3e9538405144","tls":false,"servername":"netherlands.padoamu.workers.dev","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_49","type":"vless","server":"v2.dabache.top","port":443,"uuid":"55d9ec38-1b8a-454b-981a-6acfe8f56d8c","tls":true,"servername":"sni.meibidi.pp.ua","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_50","type":"vless","server":"104.16.63.239","port":80,"uuid":"04969b01-ac6a-4056-b5cd-852ccf45f100","tls":false,"servername":"netherlands.vipserver14.workers.dev","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_51","type":"vless","server":"www.wto.org","port":2095,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":false,"servername":"xijinpingnmsl.s4ar.workers.dev","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_52","type":"vless","server":"104.18.42.163","port":443,"uuid":"db2c8a95-f751-46e3-b05e-d2def66850fb","tls":true,"servername":"ayanamirei.11160321.xyz","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_53","type":"vless","server":"cdn.tzpro.xyz","port":80,"uuid":"f2083aa4-f27d-43da-81cf-8bab31730400","tls":false,"servername":"germany.vipserver14.workers.dev","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_54","type":"vless","server":"74.48.200.172","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"servername":"all.aniuge.qzz.io","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_55","type":"vless","server":"104.21.227.134","port":443,"uuid":"3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97","tls":true,"servername":"l.ayovo.netlib.re","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_56","type":"vless","server":"45.158.127.48","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"servername":"ww20.allxniu.qzz.io","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_57","type":"vless","server":"121.154.180.50","port":51698,"udp":true,"uuid":"5d42cfef-0556-4f0c-bfb7-161aef500ab5","tls":true,"servername":"lenovoglobal.com","flow":"xtls-rprx-vision","network":"grpc","reality-opts":{"public-key":"PPZbDAYSwCYnPCF8BxguTFfAAZTnLnzpsHePCkGZYxo","short-id":"34"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_58","type":"vless","server":"visa.com","port":443,"uuid":"495c0dad-3268-4470-ac57-887c5089db0d","tls":true,"servername":"asuka.boringdad.netlib.re","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_59","type":"vless","server":"162.159.152.2","port":443,"uuid":"495c0dad-3268-4470-ac57-887c5089db0d","tls":true,"servername":"ziyong.boringdad.netlib.re","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_60","type":"vless","server":"156.229.161.107","port":10001,"udp":true,"uuid":"9c79aceb-4649-44ea-9698-b5e9ecf6d6da","tls":true,"servername":"www.icloud.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"4jNz4Bw-FZlaX-WtfAdwK0hegY28W_k8AttGd-7hZn4","short-id":"fb2c6678"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_61","type":"vless","server":"50.62.172.38","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"servername":"ww20.allxniu.qzz.io","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_62","type":"vless","server":"104.18.30.238","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"servername":"ww1.sgxaniu.qzz.io","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_63","type":"vless","server":"37.120.172.115","port":22955,"udp":true,"uuid":"63f92f3c-447c-4283-80b9-0af8e164cdad","tls":true,"servername":"one-piece.com","flow":"xtls-rprx-vision","network":"grpc","reality-opts":{"public-key":"9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_64","type":"vless","server":"104.21.31.4","port":8880,"uuid":"0a5ab719-2407-4398-b507-8437ef365023","tls":false,"servername":"underthegun.cfd.","network":"ws","ws-opts":{"path":"/FCHANNEL---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY"}}
-  - {"name":"分享日记_65","type":"vless","server":"104.19.113.54","port":80,"uuid":"29187857-4a1f-4d1e-88eb-0016771e0dbb","tls":false,"servername":"vless.hubp.de","network":"ws","ws-opts":{"path":"t.me/v2Line"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_66","type":"vless","server":"162.159.153.2","port":443,"uuid":"495c0dad-3268-4470-ac57-887c5089db0d","tls":true,"servername":"ziyong.boringdad.netlib.re","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_67","type":"vless","server":"www.perplexity.ai","port":80,"uuid":"50c2354a-442a-4dd4-b8b5-9b47ae4c5165","tls":false,"servername":"icy-block-acf1.exhume-skirt-smirk.workers.dev","network":"ws","ws-opts":{"path":"/HLW3JoJi6BADhOry16"}}
-  - {"name":"分享日记_68","type":"vless","server":"5.45.109.158","port":22955,"udp":true,"uuid":"63f92f3c-447c-4283-80b9-0af8e164cdad","tls":true,"servername":"one-piece.com","flow":"xtls-rprx-vision","network":"grpc","reality-opts":{"public-key":"9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_69","type":"vless","server":"162.159.44.142","port":443,"uuid":"3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97","tls":true,"servername":"l.ayovo.netlib.re","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_70","type":"vless","server":"usa.visa.com","port":443,"uuid":"a114d067-b900-4f60-87a5-50d4d63972b8","tls":true,"servername":"PaRiSA-CC5Zk0.paRISa-44c.woRKeRs.dev","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_71","type":"vless","server":"172.64.156.188","port":80,"uuid":"53342b53-157e-4475-9f3a-40439434e689","tls":false,"servername":"c.iamdt.dpdns.org","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_72","type":"vless","server":"104.21.224.5","port":443,"uuid":"3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97","tls":true,"servername":"l.ayovo.netlib.re","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_73","type":"vless","server":"104.18.82.55","port":443,"uuid":"29187857-4a1f-4d1e-88eb-0016771e0dbb","tls":true,"servername":"vless.hubp.de","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_74","type":"vless","server":"octopusss5.info","port":22955,"udp":true,"uuid":"63f92f3c-447c-4283-80b9-0af8e164cdad","tls":true,"servername":"one-piece.com","flow":"xtls-rprx-vision","network":"grpc","reality-opts":{"public-key":"9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_75","type":"vless","server":"104.16.62.127","port":80,"uuid":"f929cc78-e2a1-4ce3-8051-3e9538405144","tls":false,"servername":"us.padoamu.workers.dev","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_76","type":"vless","server":"yellow-disk-0edf.diyenec996.workers.dev","port":443,"uuid":"e73d4e2a-ac73-4948-960a-2c2dd57b7ea8","tls":true,"servername":"yellow-disk-0edf.diyenec996.workers.dev","network":"ws","ws-opts":{"path":"/ws"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_77","type":"vless","server":"188.114.98.112","port":80,"uuid":"0991a0c4-0ee5-4213-af89-7ad589f853f3","tls":false,"servername":"elenaaaaaaaaaa.cloudns.pro.","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_78","type":"vless","server":"104.16.250.22","port":443,"uuid":"3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97","tls":true,"servername":"l.ayovo.netlib.re","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_79","type":"vless","server":"152.53.48.224","port":22955,"udp":true,"uuid":"63f92f3c-447c-4283-80b9-0af8e164cdad","tls":true,"servername":"one-piece.com","flow":"xtls-rprx-vision","network":"grpc","reality-opts":{"public-key":"9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_80","type":"vless","server":"188.114.98.6","port":80,"uuid":"4751adcd-064b-493e-979b-b1c56c133cb4","tls":false,"servername":"steep-water-754d-ppal0333333333333333.finisal307.workers.dev","network":"ws","ws-opts":{"path":"/🔒 [By EbraSha]"}}
-  - {"name":"分享日记_81","type":"vless","server":"37.120.164.43","port":22955,"udp":true,"uuid":"63f92f3c-447c-4283-80b9-0af8e164cdad","tls":true,"servername":"one-piece.com","flow":"xtls-rprx-vision","network":"grpc","reality-opts":{"public-key":"9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_82","type":"vless","server":"152.53.51.29","port":22955,"udp":true,"uuid":"63f92f3c-447c-4283-80b9-0af8e164cdad","tls":true,"servername":"one-piece.com","flow":"xtls-rprx-vision","network":"grpc","reality-opts":{"public-key":"9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_83","type":"vless","server":"37.120.164.120","port":22955,"udp":true,"uuid":"63f92f3c-447c-4283-80b9-0af8e164cdad","tls":true,"servername":"one-piece.com","flow":"xtls-rprx-vision","network":"grpc","reality-opts":{"public-key":"9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_84","type":"vless","server":"37.120.172.61","port":22955,"udp":true,"uuid":"63f92f3c-447c-4283-80b9-0af8e164cdad","tls":true,"servername":"one-piece.com","flow":"xtls-rprx-vision","network":"grpc","reality-opts":{"public-key":"9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_85","type":"vless","server":"ip6-free.shakhle.ir","port":55566,"uuid":"f21e9332-f17e-4941-bf3a-1a5c867facf1","tls":false,"servername":"w3.com","network":"tcp"}
-  - {"name":"分享日记_86","type":"vless","server":"104.21.86.253","port":443,"uuid":"e4824193-4f54-453b-d037-88368e85ef0e","tls":true,"servername":"pqh27v1.carwashipdir.shop","network":"grpc"}
-  - {"name":"分享日记_87","type":"vless","server":"104.17.25.173","port":443,"uuid":"3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97","tls":true,"servername":"l.ayovo.netlib.re","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_88","type":"vless","server":"198.50.119.86","port":8080,"uuid":"e2be0db4-4110-42eb-bca1-ba8df0897319","tls":false,"servername":"telewebion.com","network":"ws","ws-opts":{"path":"/39427/Nextlife"}}
-  - {"name":"分享日记_89","type":"vless","server":"37.120.175.246","port":22955,"udp":true,"uuid":"63f92f3c-447c-4283-80b9-0af8e164cdad","tls":true,"servername":"one-piece.com","flow":"xtls-rprx-vision","network":"grpc","reality-opts":{"public-key":"9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_90","type":"vless","server":"dfg.octopusss.net","port":22955,"udp":true,"uuid":"63f92f3c-447c-4283-80b9-0af8e164cdad","tls":true,"servername":"one-piece.com","flow":"xtls-rprx-vision","network":"grpc","reality-opts":{"public-key":"9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_91","type":"vless","server":"152.53.50.126","port":22955,"udp":true,"uuid":"63f92f3c-447c-4283-80b9-0af8e164cdad","tls":true,"servername":"one-piece.com","flow":"xtls-rprx-vision","network":"grpc","reality-opts":{"public-key":"9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_92","type":"vless","server":"185.221.222.202","port":31779,"uuid":"052df1a5-f53f-46dc-8aeb-7ed893310551","tls":false,"network":"tcp"}
-  - {"name":"分享日记_93","type":"vless","server":"152.53.48.237","port":22955,"udp":true,"uuid":"63f92f3c-447c-4283-80b9-0af8e164cdad","tls":true,"servername":"one-piece.com","flow":"xtls-rprx-vision","network":"grpc","reality-opts":{"public-key":"9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_94","type":"vless","server":"statue.lnmarketplace.net","port":443,"uuid":"7c63f43f-f526-49bb-b5c8-2be26e11ef00","tls":true,"servername":"statue.lnmarketplace.net","network":"xhttp"}
-  - {"name":"分享日记_95","type":"vless","server":"104.18.185.26","port":443,"uuid":"3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97","tls":true,"servername":"l.ayovo.netlib.re","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_96","type":"vless","server":"94.141.161.83","port":2584,"uuid":"038a50c3-229c-41ef-a7ef-7abb504e4f33","tls":false,"network":"tcp"}
-  - {"name":"分享日记_97","type":"vless","server":"62.60.156.158","port":8082,"uuid":"00000000-0000-4000-8000-000000000000","tls":true,"servername":"ennyfe.zipgd3vx91o.ddns-ip.net","network":"ws","ws-opts":{"path":"/@Marisa_kristi"}}
-  - {"name":"分享日记_98","type":"vless","server":"104.18.45.223","port":443,"uuid":"55d9ec38-1b8a-454b-981a-6acfe8f56d8c","tls":true,"servername":"sni.meibidi.pp.ua","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_99","type":"vless","server":"198.41.193.151","port":80,"uuid":"4307e484-6c8b-46d0-9df4-8b3983ab27b4","tls":false,"servername":"029.electrocellco-cf-029.workers.dev","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_100","type":"vless","server":"188.114.97.222","port":8080,"uuid":"4307e484-6c8b-46d0-9df4-8b3983ab27b4","tls":false,"servername":"029.electrocellco-cf-029.workers.dev","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_101","type":"vless","server":"213.176.73.206","port":2083,"udp":true,"uuid":"95abaefc-7861-417a-81b7-166cb788ce1a","tls":true,"servername":"apple.com","flow":"xtls-rprx-vision","network":"grpc","reality-opts":{"public-key":"J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ","short-id":"6da16b1335651b38"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_102","type":"vless","server":"185.221.222.206","port":56824,"udp":true,"uuid":"af1a9622-5deb-480c-8539-d8763f59e012","tls":true,"servername":"ya.ru","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"Gpzl6U5r_tIq-xIGyXhzT37vIDsZW6Vot6XL1sH6lVM","short-id":"aabbccdd"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_103","type":"vless","server":"152.53.51.24","port":22955,"udp":true,"uuid":"63f92f3c-447c-4283-80b9-0af8e164cdad","tls":true,"servername":"one-piece.com","flow":"xtls-rprx-vision","network":"grpc","reality-opts":{"public-key":"9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms","short-id":"6ba85179e30d4fc2"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_104","type":"vless","server":"chatgpt.com","port":2096,"uuid":"b04e350d-e8cd-4c13-bf11-50719d181449","tls":true,"servername":"cdn.adobe-connect.top","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_105","type":"vless","server":"172.67.205.138","port":443,"uuid":"62a49d41-e231-4a6b-af26-cec86ef64001","tls":true,"servername":"1403.stopt7307.workers.dev","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_106","type":"vless","server":"50.62.172.26","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"servername":"all.aniuge.qzz.io","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_107","type":"vless","server":"162.159.152.53","port":443,"uuid":"29187857-4a1f-4d1e-88eb-0016771e0dbb","tls":true,"servername":"vless.hubp.de","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"random"}
-  - {"name":"分享日记_108","type":"vless","server":"nl11.odavpn.online","port":56824,"udp":true,"uuid":"af1a9622-5deb-480c-8539-d8763f59e012","tls":true,"servername":"ya.ru","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"Gpzl6U5r_tIq-xIGyXhzT37vIDsZW6Vot6XL1sH6lVM","short-id":"aabbccdd"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_109","type":"vless","server":"saas.sin.fan","port":2096,"uuid":"55d9ec38-1b8a-454b-981a-6acfe8f56d8c","tls":true,"servername":"sni.meibidi.pp.ua","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_110","type":"vless","server":"cf-cname.xingpingcn.top","port":2096,"uuid":"55d9ec38-1b8a-454b-981a-6acfe8f56d8c","tls":true,"servername":"sni.meibidi.pp.ua","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_111","type":"vless","server":"51.250.43.188","port":51191,"udp":true,"uuid":"62770d79-dc4d-07d0-b01c-ea30399725aa","tls":true,"servername":"ads.x5.ru","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik","short-id":"d8c6b58bcbb0c323"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_112","type":"vless","server":"45.139.26.152","port":7443,"udp":true,"uuid":"7fc953d6-ae75-46fb-a970-10b57d513487","tls":true,"servername":"eh.vk.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"BTkKaFt2xac4xAHn3EXrBKV0d8ItHSfciMFnxg57BGA","short-id":"fd88bd27db4cc661"},"client-fingerprint":"random"}
-  - {"name":"分享日记_113","type":"vless","server":"api.dark-coffe.com","port":2087,"uuid":"7e58699f-1d5d-4f6b-b181-cb74f0ad9509","tls":true,"servername":"5JxGp6VrFh.SmArTtEcHzAaL.iNfO","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_114","type":"vless","server":"194.117.64.92","port":443,"udp":true,"uuid":"cb418edc-f6e1-4c79-a81f-946eb958f0ab","tls":true,"servername":"www.speedtest.net","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"fW43MXDdfHEKYdq8-YWvTsl4-h-2BFE69W1ZGuLg6lI","short-id":"86473f2d52494ed4"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_115","type":"vless","server":"api.dark-coffe.com","port":2096,"uuid":"7e58699f-1d5d-4f6b-b181-cb74f0ad9509","tls":true,"servername":"TzS7v35LfD.sMaRtTeChZaAl.InFo","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_116","type":"vless","server":"77.238.231.179","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"servername":"all.aniuge.qzz.io","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_117","type":"vless","server":"5.10.214.5","port":2087,"uuid":"7e58699f-1d5d-4f6b-b181-cb74f0ad9509","tls":true,"servername":"5JxGp6VrFh.SmArTtEcHzAaL.InFo","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_118","type":"vless","server":"172.67.193.88","port":443,"uuid":"602b380a-9fdf-4425-bc07-aae9a95cfc4b","tls":true,"servername":"hemmat.iranmap.workers.dev","network":"ws","ws-opts":{"path":"/vless.hubp.de"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_119","type":"vless","server":"159.195.26.28","port":443,"udp":true,"uuid":"84f66368-8a37-468e-ae95-5622255fd4db","tls":true,"servername":"live.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_120","type":"vless","server":"144.31.90.215","port":443,"uuid":"02fb468f-21f2-460e-bfa1-ef52ae5e627f","tls":true,"servername":"ficdn19.suio.me","network":"tcp"}
-  - {"name":"分享日记_121","type":"vless","server":"bastion.h3.speed.cloudflare.com","port":80,"uuid":"👉👉BanV2ray👈👈","tls":false,"servername":"visvuev-272526281716252527717252.poshakhowdy.ir.","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_122","type":"vless","server":"192.241.201.168","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"servername":"all.aniuge.qzz.io","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_123","type":"vless","server":"95.163.209.178","port":2083,"udp":true,"uuid":"95abaefc-7861-417a-81b7-166cb788ce1a","tls":true,"servername":"ads.x5.ru","flow":"xtls-rprx-vision","network":"grpc","reality-opts":{"public-key":"J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ","short-id":"6da16b1335651b38"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_124","type":"vless","server":"45.12.145.80","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"servername":"all.aniuge.qzz.io","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_125","type":"vless","server":"144.31.0.64","port":443,"uuid":"02fb468f-21f2-460e-bfa1-ef52ae5e627f","tls":true,"servername":"plcdn1.suio.me","network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"分享日记_126","type":"vless","server":"51.250.38.137","port":4443,"udp":true,"uuid":"71031aa1-067e-425e-97f5-37875f838a10","tls":true,"servername":"eh.vk.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"2W9bsI7dX2ryZNdv_GLh3YuO2ynFGsdu3Iz3fgWU5CQ","short-id":"cee8"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_127","type":"vless","server":"91.107.244.15","port":443,"uuid":"7b148add-4438-426e-a583-50f11e7bd0e4","tls":false,"network":"grpc"}
-  - {"name":"分享日记_128","type":"vless","server":"25.26.27.28","port":2052,"uuid":"cb522244-ff63-4883-ae1f-87d883fb2da7","tls":false,"servername":"cLoUd.zIrAkOmAmLe.CoM","network":"httpupgrade"}
-  - {"name":"分享日记_129","type":"vless","server":"5.10.214.0","port":443,"uuid":"7e58699f-1d5d-4f6b-b181-cb74f0ad9509","tls":true,"servername":"GfV5t2331T.sMaRtTeChZaAl.InFo","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_130","type":"vless","server":"91.107.148.79","port":443,"uuid":"7b148add-4438-426e-a583-50f11e7bd0e4","tls":false,"network":"grpc"}
-  - {"name":"分享日记_131","type":"vless","server":"plcdn13.suio.me","port":443,"uuid":"02fb468f-21f2-460e-bfa1-ef52ae5e627f","tls":true,"servername":"plcdn13.suio.me","network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"分享日记_132","type":"vless","server":"57.128.179.254","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"servername":"all.aniuge.qzz.io","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_133","type":"vless","server":"146.75.119.82","port":80,"uuid":"74542945-0d84-4797-a56e-e7f31b84c5be","tls":false,"servername":"welcomtofreeboarders.com","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_134","type":"vless","server":"platform.wise.com","port":2053,"uuid":"1a25f8ad-cad2-4e93-b5bf-34e42bcac02a","tls":true,"servername":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_135","type":"vless","server":"5.181.21.95","port":443,"uuid":"3321a819-889d-40b3-b8fa-f34208827ef1","tls":true,"servername":"o00o.snip.qzz.io","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_136","type":"vless","server":"5.10.214.0","port":2096,"uuid":"7e58699f-1d5d-4f6b-b181-cb74f0ad9509","tls":true,"servername":"TzS7v35LfD.sMaRtTeChZaAl.InFo","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_137","type":"vless","server":"144.31.2.122","port":443,"udp":true,"uuid":"7993192f-2875-4aed-ac8f-26f1596cf8e7","tls":true,"servername":"sun6-21.userapi.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"8CLRwG6JsXb1MrOpnmMlnAFLQ4bQqwaE57iEACmiF1o","short-id":"8be9fb528a"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_138","type":"vless","server":"plcdn14.suio.me","port":443,"uuid":"02fb468f-21f2-460e-bfa1-ef52ae5e627f","tls":true,"servername":"plcdn14.suio.me","network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"分享日记_139","type":"vless","server":"8.34.70.2","port":2096,"uuid":"337bf72e-bb79-4d5f-be3f-7822eb77100c","tls":true,"servername":"YdHxR987jY.bAsErTy.InFo","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_140","type":"vless","server":"plcdn1.suio.me","port":443,"uuid":"02fb468f-21f2-460e-bfa1-ef52ae5e627f","tls":true,"servername":"plcdn1.suio.me","network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"分享日记_141","type":"vless","server":"104.21.43.168","port":443,"uuid":"b2744521-78b7-4c24-86f2-4f751d1cb7bf","tls":true,"servername":"private.digikala.lat","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_142","type":"vless","server":"37.120.186.241","port":80,"uuid":"53fff6cc-b4ec-43e8-ade5-e0c42972fc33","tls":false,"servername":"cdn.ir","network":"ws","ws-opts":{"path":"/news"}}
-  - {"name":"分享日记_143","type":"vless","server":"5.10.214.0","port":2087,"uuid":"7e58699f-1d5d-4f6b-b181-cb74f0ad9509","tls":true,"servername":"5JxGp6VrFh.SmArTtEcHzAaL.iNfO","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_144","type":"vless","server":"5.180.24.11","port":4443,"udp":true,"uuid":"3f688b2a-373a-4be1-846d-b159404b73b2","tls":true,"servername":"github.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE","short-id":"aa7e96542880027a"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_145","type":"vless","server":"25.129.197.138","port":2096,"uuid":"0e0bf934-1942-4379-9c98-5cd9aa93140a","tls":true,"servername":"speed1.best-cloud.ir","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_146","type":"vless","server":"172.66.0.102","port":80,"uuid":"👉👉BanV2ray👈👈","tls":false,"servername":"visvuev-272526281716252527717252.poshakhowdy.ir.","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_147","type":"vless","server":"162.19.228.119","port":80,"uuid":"dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51","tls":false,"servername":"Telegram id: @V2raySeven","network":"ws","ws-opts":{"path":"/http"}}
-  - {"name":"分享日记_148","type":"vless","server":"188.34.193.153","port":443,"udp":true,"uuid":"309fa273-6579-4cb2-9143-7cad50401eba","tls":true,"servername":"www.cloudflare.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"gZGVp5PUdafgsmi1gawa1yLuha_XhXRc_W9SvPiGmTY","short-id":"7cad5040"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_149","type":"vless","server":"34.143.159.175","port":443,"uuid":"55d9ec38-1b8a-454b-981a-6acfe8f56d8c","tls":true,"servername":"sni.meibidi.pp.ua","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_150","type":"vless","server":"lord.kokopit.info","port":2096,"uuid":"337bf72e-bb79-4d5f-be3f-7822eb77100c","tls":true,"servername":"18XaCgNj9C.bAsErTy.InFo","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_151","type":"vless","server":"188.253.27.190","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"servername":"ww3.xaniujp1.qzz.io","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_152","type":"vless","server":"nasnet-146198073-direct.iranpress.co","port":443,"uuid":"nasnet","tls":true,"servername":"nasnet-146198073-direct.iranpress.co","flow":"xtls-rprx-vision","network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"分享日记_153","type":"vless","server":"lv.fasti.win","port":443,"udp":true,"uuid":"0d93b787-b66b-4696-a036-a0f549764f69","tls":true,"servername":"lv.fasti.win","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"9ged75OhdD4P8yzPPXDESnRkdFM4br4I44OwXLWd_iY","short-id":"0a50b13e8fa3a7ef"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_154","type":"vless","server":"65.109.178.83","port":443,"uuid":"7b148add-4438-426e-a583-50f11e7bd0e4","tls":false,"network":"grpc"}
-  - {"name":"分享日记_155","type":"vless","server":"188.114.98.224","port":443,"uuid":"95fd8ed6-0c48-41be-ae26-dfea82fa67ad","tls":true,"servername":"hetzner.rahedarro.com","network":"ws","ws-opts":{"path":"/dar"}}
-  - {"name":"分享日记_156","type":"vless","server":"45.82.255.32","port":4443,"udp":true,"uuid":"3f688b2a-373a-4be1-846d-b159404b73b2","tls":true,"servername":"github.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE","short-id":"aa7e96542880027a"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_157","type":"vless","server":"rblx.fasti.win","port":443,"udp":true,"uuid":"0d93b787-b66b-4696-a036-a0f549764f69","tls":true,"servername":"rblx.fasti.win","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"9ged75OhdD4P8yzPPXDESnRkdFM4br4I44OwXLWd_iY","short-id":"0a50b13e8fa3a7ef"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_158","type":"vless","server":"37.120.184.180","port":80,"uuid":"53fff6cc-b4ec-43e8-ade5-e0c42972fc33","tls":false,"servername":"cdn.ir","network":"ws","ws-opts":{"path":"/news"}}
-  - {"name":"分享日记_159","type":"vless","server":"27.50.48.8","port":443,"uuid":"602b380a-9fdf-4425-bc07-aae9a95cfc4b","tls":true,"servername":"vless.hubp.de","network":"ws","ws-opts":{"path":"/snippets/ip"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_160","type":"vless","server":"144.31.1.127","port":443,"uuid":"02fb468f-21f2-460e-bfa1-ef52ae5e627f","tls":true,"servername":"plcdn13.suio.me","network":"tcp"}
-  - {"name":"分享日记_161","type":"vless","server":"www.speedtest.net","port":80,"uuid":"be38fcfb-6bef-4bad-b0ec-3bfd0a8d6265","tls":false,"servername":"3h-kAzakhStan1.09vPn.cOm.","network":"ws","ws-opts":{"path":"/vless/?JoinBede--ELiV2RAY--ELiV2RAY--ELiV2RAY--ELiV2RAY--ELiV2RAY--ELiV2RAY--ELiV2RAY--ELiV2RAY--ELiV2RAY"}}
-  - {"name":"分享日记_162","type":"vless","server":"43.165.190.11","port":42841,"uuid":"00000000-0000-4000-8000-000000000000","tls":true,"servername":"mot.morisi.ggff.net","network":"ws","ws-opts":{"path":"/@Marisa_kristi"}}
-  - {"name":"分享日记_163","type":"vless","server":"46.183.217.234","port":443,"udp":true,"uuid":"0d93b787-b66b-4696-a036-a0f549764f69","tls":true,"servername":"rblx.fasti.win","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"9ged75OhdD4P8yzPPXDESnRkdFM4br4I44OwXLWd_iY","short-id":"0a50b13e8fa3a7ef"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_164","type":"vless","server":"www.speedtest.net","port":443,"uuid":"5152ff5b-56f7-400c-bc1d-2f1dd1ac1e13","tls":true,"servername":"010.electrocellco-cf-010.workers.dev","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_165","type":"vless","server":"ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz","port":443,"udp":true,"uuid":"0e8a6896-ad90-4a3b-89a3-77d64aa409e2","tls":true,"servername":"i2pd.website","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE","short-id":"55e6af1a35e64a98"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_166","type":"vless","server":"5.10.214.5","port":443,"uuid":"7e58699f-1d5d-4f6b-b181-cb74f0ad9509","tls":true,"servername":"GfV5t2331T.sMaRtTeChZaAl.InFo","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_167","type":"vless","server":"144.31.19.193","port":443,"udp":true,"uuid":"95abaefc-7861-417a-81b7-166cb788ce1a","tls":true,"servername":"st.ozone.ru","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"9ajY_OBOn5CCPnCJTPjxg6J3IWE8uJYAiWQvG9CBGjU","short-id":"00684d2eae2cdd16"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_168","type":"vless","server":"167.235.86.236","port":443,"uuid":"1a25f8ad-cad2-4e93-b5bf-34e42bcac02a","tls":true,"servername":"sni.111000.de5.net","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_169","type":"vless","server":"217.142.185.111","port":443,"uuid":"55d9ec38-1b8a-454b-981a-6acfe8f56d8c","tls":true,"servername":"sni.meibidi.pp.ua","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_170","type":"vless","server":"46.183.216.206","port":443,"udp":true,"uuid":"0d93b787-b66b-4696-a036-a0f549764f69","tls":true,"servername":"rblx.fasti.win","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"9ged75OhdD4P8yzPPXDESnRkdFM4br4I44OwXLWd_iY","short-id":"0a50b13e8fa3a7ef"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_171","type":"vless","server":"clean.photoggenic.ir","port":8880,"uuid":"8e997404-cb62-4fa1-a8c9-c77a32f10153","tls":false,"servername":"rightel.IRANCEELL.mci.it.www.speedtest.net.zula.ir.focusontrade.ir","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_172","type":"vless","server":"79.174.92.44","port":2083,"udp":true,"uuid":"95abaefc-7861-417a-81b7-166cb788ce1a","tls":true,"servername":"ads.x5.ru","flow":"xtls-rprx-vision","network":"grpc","reality-opts":{"public-key":"J6NuOlIq3ypdTFc1TMhDDKmF8BWPnNWZq1EkxD7K-lQ","short-id":"6da16b1335651b38"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_173","type":"vless","server":"37.18.15.139","port":443,"udp":true,"uuid":"4371ad14-b981-4699-bedf-83fb79bde3e6","tls":true,"servername":"max.ru","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg","short-id":"4a3ad88ff867a295"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_174","type":"vless","server":"172.66.132.196","port":443,"uuid":"d0298536-d670-4045-bbb1-ddd5ea68683e","tls":true,"servername":"a.azadnet003.ddns-ip.net","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_175","type":"vless","server":"25.25.25.0","port":8880,"uuid":"8e997404-cb62-4fa1-a8c9-c77a32f10153","tls":false,"servername":"rightel.IRANCEELL.mci.it.www.speedtest.net.zula.ir.focusontrade.ir","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_176","type":"vless","server":"65.109.211.233","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"servername":"all.aniuge.qzz.io","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_177","type":"vless","server":"103.219.193.54","port":47365,"udp":true,"uuid":"2c503f75-1dc8-4c0c-ba07-a11a9d085840","tls":true,"servername":"www.microsoft.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"OS3kmYquxfONWW-d97YxQU_kH-Vc-sy2ehpvtS02LTI","short-id":"ee95bdc46f0b8e14"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_178","type":"vless","server":"185.130.115.250","port":443,"udp":true,"uuid":"7d39c92f-abae-46ff-a669-9e4d1e7e8a62","tls":true,"servername":"max.ru","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"LHcascaxOxugVSALgsYx46nB-vuhT7ANOneu0xb6SzQ","short-id":"3b25133dd9e5c23f"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_179","type":"vless","server":"92.60.70.36","port":2053,"uuid":"08c7f096-d057-4d53-82fd-c739d372887b","tls":false,"network":"tcp"}
-  - {"name":"分享日记_180","type":"vless","server":"144.31.119.84","port":443,"udp":true,"uuid":"95abaefc-7861-417a-81b7-166cb788ce1a","tls":true,"servername":"st.ozone.ru","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"9ajY_OBOn5CCPnCJTPjxg6J3IWE8uJYAiWQvG9CBGjU","short-id":"00684d2eae2cdd16"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_181","type":"vless","server":"95.174.92.156","port":443,"udp":true,"uuid":"cc61ea7c-92f2-4c2d-b272-32cfe8fdf99f","tls":true,"servername":"carreta.ru","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw","short-id":"2f3e735aedc55aaf"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_182","type":"vless","server":"betty.ns.cloudflare.com","port":443,"uuid":"d851e68a-af64-4dfc-a85a-7ffad2483230","tls":true,"servername":"639031180460930556.altima-amsjq.info","network":"ws","ws-opts":{"path":"/oqxdqtws"}}
-  - {"name":"分享日记_183","type":"vless","server":"146.185.208.60","port":443,"udp":true,"uuid":"7d39c92f-abae-46ff-a669-9e4d1e7e8a62","tls":true,"servername":"max.ru","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"LHcascaxOxugVSALgsYx46nB-vuhT7ANOneu0xb6SzQ","short-id":"3b25133dd9e5c23f"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_184","type":"vless","server":"92.60.78.221","port":443,"udp":true,"uuid":"6897c181-24b1-4880-8660-e6c5c7ee13c7","tls":true,"servername":"www.tradingview.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"pkIWxbuPAasjatPaHnAaTnCxVj1RkDFsJEWpLUTOcWY","short-id":"9917d2350096"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_185","type":"vless","server":"188.253.23.98","port":443,"uuid":"5aba5b77-48eb-4ae2-b60d-5bfee7ac169e","tls":true,"servername":"kuangbao.xiejiang.dpdns.org","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_186","type":"vless","server":"staticdelivery.nexusmods.com","port":443,"uuid":"b5dbd0aa-22f6-4a00-9bcc-3606fa8fc56d","tls":true,"servername":"kb.as129394.me","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_187","type":"vless","server":"speedtest.net","port":80,"uuid":"Parsashonam-338","tls":false,"servername":"Free-V2ray-Bot-Parsashonam3.global.ssl.fastly.net","network":"xhttp"}
-  - {"name":"分享日记_188","type":"vless","server":"185.234.57.207","port":443,"udp":true,"uuid":"dd92c4f8-be88-4c61-84eb-d261f798071e","tls":true,"servername":"teamdocs.su","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"Yu1_Agl1_bJb298G9ukjGuvfksVTUs1X7laYJ3VqwwQ","short-id":"b5e0cd9ca194c0a5"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_189","type":"vless","server":"5.10.214.5","port":2096,"uuid":"7e58699f-1d5d-4f6b-b181-cb74f0ad9509","tls":true,"servername":"TzS7v35LfD.sMaRtTeChZaAl.InFo","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_190","type":"vless","server":"188.253.24.71","port":443,"uuid":"e258977b-e413-4718-a3af-02d75492c349","tls":true,"servername":"all.aniuge.qzz.io","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_191","type":"vless","server":"43.161.222.233","port":443,"uuid":"55d9ec38-1b8a-454b-981a-6acfe8f56d8c","tls":true,"servername":"sni.meibidi.pp.ua","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_192","type":"vless","server":"104.26.1.221","port":443,"uuid":"3f9c8463-8610-3ed8-86c8-a26713067825","tls":true,"servername":"dabaius2.sylu.net","network":"ws","ws-opts":{"path":"/db10240eb751d6ab"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_193","type":"vless","server":"all.tellmethetrue.shop","port":443,"uuid":"e4824193-4f54-453b-d037-88368e85ef0e","tls":true,"servername":"pqh29v4.carwashipdir.shop","network":"grpc"}
-  - {"name":"分享日记_194","type":"vless","server":"82.97.252.100","port":4443,"udp":true,"uuid":"3f688b2a-373a-4be1-846d-b159404b73b2","tls":true,"servername":"github.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE","short-id":"aa7e96542880027a"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_195","type":"vless","server":"134.122.61.31","port":443,"uuid":"98bdfa8a-bcc7-4dc9-b6fd-a5e5b3076435","tls":true,"servername":"joss.gvpn2.web.id","network":"ws","ws-opts":{"path":"/Free-VPN-CF-Geo-Project/NL187"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_196","type":"vless","server":"173.245.59.244","port":8080,"uuid":"4307e484-6c8b-46d0-9df4-8b3983ab27b4","tls":false,"servername":"029.electrocellco-cf-029.workers.dev","network":"ws","ws-opts":{"path":"/"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_197","type":"vless","server":"45.83.143.159","port":443,"udp":true,"uuid":"12c04e26-9bbd-46e0-9972-c131294e4f6e","tls":true,"servername":"nod-f2.irkutsk.online","flow":"xtls-rprx-vision","network":"xhttp","reality-opts":{"public-key":"nDudcq4Mop7eRwoa-Q-FxwzNiYjiNu5lNpOUg17jeFY","short-id":"8a6a"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_198","type":"vless","server":"51.250.16.8","port":7443,"udp":true,"uuid":"87d58e85-a4b3-4187-9fb7-6f0a73b21a6b","tls":true,"servername":"ads.x5.ru","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs","short-id":"a20d3ed244c76426"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_199","type":"vless","server":"third-legend.atlanta-internet.ru","port":443,"udp":true,"uuid":"669be00c-67b4-4b87-b08f-311c45abced2","tls":true,"servername":"static.rutube.ru","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"a_LbD81zTm6S8JtU98gY00xqsPOEucV4k0OEx0LOwgQ","short-id":"ffffffffff"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_200","type":"vless","server":"45.82.246.114","port":4443,"udp":true,"uuid":"3f688b2a-373a-4be1-846d-b159404b73b2","tls":true,"servername":"github.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE","short-id":"aa7e96542880027a"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_201","type":"vless","server":"68.64.176.135","port":443,"uuid":"55d9ec38-1b8a-454b-981a-6acfe8f56d8c","tls":true,"servername":"sni.meibidi.pp.ua","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_202","type":"vless","server":"47.253.226.114","port":443,"udp":true,"uuid":"055a1ce8-2a16-4a0d-a2c2-22826c9b2413","tls":true,"servername":"www.cloudflare.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_203","type":"vless","server":"kz.fasti.win","port":443,"udp":true,"uuid":"0d93b787-b66b-4696-a036-a0f549764f69","tls":true,"servername":"kz.fasti.win","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"rmjxUM7tGXK1tCx9DN6LujbEflBHixsg8oTsVrdTrDM","short-id":"a28842ab2911096b"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_204","type":"vless","server":"25.26.27.158","port":2095,"uuid":"f39c206d-8acc-4304-95cc-afe234a2f6f8","tls":false,"servername":"www.zie3ep.SITE.","network":"xhttp"}
-  - {"name":"分享日记_205","type":"vless","server":"84.252.138.63","port":443,"udp":true,"uuid":"4371ad14-b981-4699-bedf-83fb79bde3e6","tls":true,"servername":"sun6-21.userapi.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg","short-id":"17802e8ff84f12df"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_206","type":"vless","server":"178.17.53.28","port":47539,"udp":true,"uuid":"447c45cd-ade0-4bfe-90a0-3e581829f741","tls":true,"servername":"yandex.ru","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"uapzi5mhLkADHuak0eXEKq9vIl2A8IGrMhjdIG-tn3U","short-id":"82a55f31981ea6be"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_207","type":"vless","server":"199.241.32.132","port":26978,"udp":true,"uuid":"9042affd-0ad3-4014-adbc-e52f00891ea2","tls":true,"servername":"tesla.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"n2w4hj7Q7wN6P21LSJJwIPitfYZbwWh5a2seJHH58SE","short-id":"28bf"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_208","type":"vless","server":"sakura.bunnywaffle.org","port":26978,"udp":true,"uuid":"9042affd-0ad3-4014-adbc-e52f00891ea2","tls":true,"servername":"tesla.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"n2w4hj7Q7wN6P21LSJJwIPitfYZbwWh5a2seJHH58SE","short-id":"28bf"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_209","type":"vless","server":"154.17.10.237","port":443,"uuid":"55d9ec38-1b8a-454b-981a-6acfe8f56d8c","tls":true,"servername":"sni.meibidi.pp.ua","network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_210","type":"vless","server":"45.15.185.45","port":443,"udp":true,"uuid":"0d93b787-b66b-4696-a036-a0f549764f69","tls":true,"servername":"au.fasti.win","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"-YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs","short-id":"feedbacc"},"client-fingerprint":"chrome"}
-  - {"name":"分享日记_211","type":"vless","server":"fast.panelha.sbs","port":80,"uuid":"95f75825-bbcc-4e53-a91d-9364db9d4b42","tls":false,"servername":"sudo2015.ir","network":"xhttp"}
-  - {"name":"分享日记_212","type":"trojan","server":"tuntro011.instconn.com","port":40130,"udp":true,"password":"30077070-596e-48ea-9400-14c8ed07bd97","sni":"cntwbta.686911.xyz","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"分享日记_213","type":"trojan","server":"cf.090227.xyz","port":443,"udp":true,"password":"87d1bfd4-574e-4c96-ad42-0426f27461ff","sni":"_acme-challenge.2go.cloudns.be","skip-cert-verify":false,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_214","type":"trojan","server":"store.ubi.com","port":443,"udp":true,"password":"87d1bfd4-574e-4c96-ad42-0426f27461ff","sni":"_acme-challenge.2go.cloudns.be","skip-cert-verify":false,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_215","type":"trojan","server":"188.114.96.3","port":443,"udp":true,"password":"XZ|P5}oQVc8V","sni":"004.eLecTrOCELLco-cf-004.WorkeRs.DEv","skip-cert-verify":false,"network":"ws","ws-opts":{"path":"/eyJqdW5rIjoiQng3QkdTTklpbGdldG0iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI0NS4xMzUuMTY1LjI0NSIsIjExNi4yMDMuNTguMTY1Il19","headers":{"host":"004.electrocellco-cf-004.workers.devhttp/1.1"}}}
-  - {"name":"分享日记_216","type":"trojan","server":"167.68.4.199","port":2053,"udp":true,"password":"Aimer","sni":"epge.muarua.filegear-sg.me","skip-cert-verify":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"epge.muarua.filegear-sg.me"}}}
-  - {"name":"分享日记_217","type":"trojan","server":"109.234.211.66","port":2087,"udp":true,"password":"trojan","sni":"store.timimi.dpdns.org","skip-cert-verify":false,"network":"ws","ws-opts":{"path":"/","headers":{"host":"store.timimi.dpdns.org"}}}
-  - {"name":"分享日记_218","type":"trojan","server":"205.185.115.223","port":19258,"udp":true,"password":"iWnFtzMiac","sni":"cloudflare.com","skip-cert-verify":true,"network":"grpc"}
-  - {"name":"分享日记_219","type":"trojan","server":"137.74.41.156","port":7494,"udp":true,"password":"zL7CpPYxhvFtYqm2yAbHrw","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"分享日记_220","type":"trojan","server":"usa.visa.com","port":443,"udp":true,"password":"zWFjJENcljZm","sni":"vahidqaz-7o61u7.vahidqaz.workers.dev","skip-cert-verify":false,"network":"ws","ws-opts":{"path":"/"}}
-  - {"name":"分享日记_221","type":"trojan","server":"www.calmlunch.com","port":443,"udp":true,"password":"humanity","sni":"www.calmlunch.com","skip-cert-verify":false,"network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.calmlunch.com"}}}
-  - {"name":"分享日记_222","type":"trojan","server":"free-de-3.undef.network","port":443,"udp":true,"password":"xtA6WF92Itmhm9jfvXUH1MDVL","sni":"free-de-3.undef.network","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"分享日记_223","type":"trojan","server":"58.152.18.124","port":443,"udp":true,"password":"4843e94d205f3893f588255a591abe94","sni":"www.nintendogames.net","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"分享日记_224","type":"trojan","server":"tuntro000.instconn.com","port":443,"udp":true,"password":"30077070-596e-48ea-9400-14c8ed07bd97","sni":"hkip5.686911.xyz","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"分享日记_225","type":"trojan","server":"ru2.nn-id.com","port":443,"udp":true,"password":"WES_fgw3oQW65zFx4_Ax1AmdW-rrAorU","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"分享日记_226","type":"trojan","server":"green2.cdntencentmusic.com","port":35501,"udp":true,"password":"30b2eb56-ce6c-4936-8704-304d5fb19c86","sni":"green2.cdntencentmusic.com","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"分享日记_227","type":"trojan","server":"45.82.14.144","port":2025,"udp":true,"password":"vpn","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"dns.google.com"}}}
-  - {"name":"分享日记_228","type":"trojan","server":"green2.cdntencentmusic.com","port":31101,"udp":true,"password":"9d23ec89-a50a-4634-b09e-37330ce09b37","sni":"green2.cdntencentmusic.com","skip-cert-verify":false,"network":"tcp"}
-  - {"name":"分享日记_229","type":"trojan","server":"tuntro003.instconn.com","port":443,"udp":true,"password":"30077070-596e-48ea-9400-14c8ed07bd97","sni":"login-staticjpc.jasmine-douyin.top","skip-cert-verify":false,"network":"tcp"}
+  - {name: 未知地区, server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz, port: 443, type: trojan, password: 87d1bfd4-574e-4c96-ad42-0426f27461ff, sni: _acme-challenge.sb.cloudns.biz, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: _acme-challenge.sb.cloudns.biz}}, udp: true}
+  - {name: 未知地区 2, server: HHhjki.TAIwaN2028.indEvS.in, port: 80, type: vmess, uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd, headers: {Host: hHHJkI.taiwAn2028.iNDEVs.in}}, udp: true}
+  - {name: 未知地区 3, server: gf.usa2030.indevs.in, port: 80, type: vmess, uuid: 5196aae7-1479-4f3c-978b-68e74977b509, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /kl01iHu1vgbJmQ5IKMBivnR3, headers: {Host: gf.usa2030.indevs.in}}, udp: true}
+  - {name: 未知地区 4, server: mmKk.wWW890604.dpdns.OrG, port: 80, type: vmess, uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd, headers: {Host: mmKk.wWW890604.DPdNS.OrG}}, udp: true}
+  - {name: 未知地区 5, server: 90.890624.xyz, port: 80, type: vmess, uuid: b020865b-7404-4894-ba65-a7414b10cda3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr, headers: {Host: 90.890624.xyz}}, udp: true}
+  - {name: 未知地区 6, server: mMmKi.890634.xyZ, port: 80, type: vmess, uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd, headers: {Host: MMmKI.890634.XyZ}}, udp: true}
+  - {name: 未知地区 7, server: vVVbNHj.191288.xYz, port: 80, type: vmess, uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd, headers: {Host: VvVBnHj.191288.XYZ}}, udp: true}
+  - {name: 未知地区 8, server: bbbnmkl.2030.pp.ua, port: 80, type: vmess, uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd, headers: {Host: bbbnmkl.2030.pp.ua}}, udp: true}
+  - {name: 未知地区 9, server: vip3.kaixincloud.top, port: 8443, type: trojan, password: T9BpZIVMNv, sni: sweden.vmaxpanel.com, skip-cert-verify: true, network: ws, ws-opts: {path: /amd, headers: {Host: sweden.vmaxpanel.com}}, udp: true}
+  - {name: 未知地区 10, server: mmmhu.huangshang.online, port: 443, type: trojan, password: 5cccb4da-8aee-4b01-be84-2056265e52dc, sni: mMMhU.HUangSHANG.onlIne, skip-cert-verify: true, network: ws, ws-opts: {path: /hV829BTVzg35A6ueyyZnWd, headers: {Host: mMMhU.HUangSHANG.onlIne}}, udp: true}
+  - {name: 🇩🇪 德国, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 未知地区 11, server: hhhjki.taiwan2028.indevs.in, port: 80, type: vmess, uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd, headers: {Host: hHHJkI.taiwAn2028.iNDEVs.in}}, udp: true}
+  - {name: 🇩🇪 德国 2, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 未知地区 12, server: ggghj.www890604.dpdns.org, port: 443, type: trojan, password: 5cccb4da-8aee-4b01-be84-2056265e52dc, sni: ggghj.www890604.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: /hV829BTVzg35A6ueyyZnWd, headers: {Host: ggghj.www890604.dpdns.org}}, udp: true}
+  - {name: 🇩🇪 德国 3, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国 4, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国 5, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 未知地区 13, server: mmmk.288288.shop, port: 443, type: trojan, password: 5cccb4da-8aee-4b01-be84-2056265e52dc, sni: Mmmk.288288.shoP, skip-cert-verify: true, network: ws, ws-opts: {path: /hV829BTVzg35A6ueyyZnWd, headers: {Host: Mmmk.288288.shoP}}, udp: true}
+  - {name: 🇩🇪 德国 6, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国 7, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国 8, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国 9, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 未知地区 14, server: 172.67.219.254, port: 443, type: vmess, uuid: 0c6b96bc-5e3a-4500-8497-6dead1965609, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /KHtPvNZl371C8NsbbZ1wwDhJ3, headers: {Host: 42214edb-ec81-4091-bfa7-c4ced68ee019.661.qzz.io}}, udp: true}
+  - {name: 未知地区 15, server: mmmk.288288.shop, port: 443, type: trojan, password: 5cccb4da-8aee-4b01-be84-2056265e52dc, sni: Mmmk.288288.shoP, skip-cert-verify: true, network: ws, ws-opts: {path: /hV829BTVzg35A6ueyyZnWd, headers: {Host: Mmmk.288288.shoP}}, udp: true}
+  - {name: 未知地区 16, server: mmmki.890634.xYZ, port: 80, type: vmess, uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd, headers: {Host: Mmmki.890634.XYz}}, udp: true}
+  - {name: 🇩🇪 德国 10, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国 11, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国 12, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国 13, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国 14, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国 15, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国 16, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国 17, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 未知地区 17, server: mmkk.www890604.dpdns.org, port: 443, type: trojan, password: 5cccb4da-8aee-4b01-be84-2056265e52dc, sni: mMKK.WwW890604.DpdNS.OrG, skip-cert-verify: true, network: ws, ws-opts: {path: /hV829BTVzg35A6ueyyZnWd, headers: {Host: mMKK.WwW890604.DpdNS.OrG}}, udp: true}
+  - {name: 未知地区 18, server: kkko9.191288.xyz, port: 443, type: trojan, password: 5cccb4da-8aee-4b01-be84-2056265e52dc, sni: kKko9.191288.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: /hV829BTVzg35A6ueyyZnWd, headers: {Host: kKko9.191288.xyz}}, udp: true}
+  - {name: 未知地区 19, server: ooiuyt.890699.xyz, port: 443, type: trojan, password: 98b419ef-83a2-4d1b-a23d-566b7f24477b, sni: OOIuyT.890699.xYZ, skip-cert-verify: true, network: ws, ws-opts: {path: /Klh0x8wtLpTGA5AqzZ2Mj, headers: {Host: OOIuyT.890699.xYZ}}, udp: true}
+  - {name: 未知地区 20, server: v1.dabache.top, port: 8443, type: trojan, password: T9BpZIVMNv, sni: sweden.vmaxpanel.com, skip-cert-verify: true, network: ws, ws-opts: {path: /amd, headers: {Host: sweden.vmaxpanel.com}}, udp: true}
+  - {name: 未知地区 21, server: rrrgt.2030.pp.ua, port: 80, type: vmess, uuid: fc3704d6-8e5e-443a-bd5b-20ec7cfbe990, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /eszjp4nTT8TxDHFepMpfNkCk8, headers: {Host: rrrgt.2030.pp.ua}}, udp: true}
+  - {name: 未知地区 22, server: yyyhhjki.taipei101.indevs.in, port: 443, type: trojan, password: 98b419ef-83a2-4d1b-a23d-566b7f24477b, sni: YyYhHjKI.TAIPEi101.INdEVs.in, skip-cert-verify: true, network: ws, ws-opts: {path: /Klh0x8wtLpTGA5AqzZ2Mj, headers: {Host: YyYhHjKI.TAIPEi101.INdEVs.in}}, udp: true}
+  - {name: 未知地区 23, server: CCCVFffF.191288.Xyz, port: 80, type: vmess, uuid: 4a7baca1-8048-4a91-8316-595b36657a54, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TaBvkrUbsyvsvinsGGg, headers: {Host: cCCVfffF.191288.xyZ}}, udp: true}
+  - {name: 未知地区 24, server: fffffg.890602.pp.ua, port: 80, type: vmess, uuid: 4a7baca1-8048-4a91-8316-595b36657a54, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TaBvkrUbsyvsvinsGGg, headers: {Host: fffffg.890602.pp.ua}}, udp: true}
+  - {name: 未知地区 25, server: bbbnmkl.taiwan2028.indevs.in, port: 443, type: trojan, password: 5cccb4da-8aee-4b01-be84-2056265e52dc, sni: bBbNmKl.TAIwAn2028.IndEvs.In, skip-cert-verify: true, network: ws, ws-opts: {path: /hV829BTVzg35A6ueyyZnWd, headers: {Host: bBbNmKl.TAIwAn2028.IndEvs.In}}, udp: true}
+  - {name: 未知地区 26, server: vvvbbbnhj.taipei102.indevs.in, port: 443, type: trojan, password: 2bfe58f7-da1d-45df-ab43-7c665b20ee29, sni: vvvbbbnhj.taipei102.indevs.in, skip-cert-verify: true, network: ws, ws-opts: {path: /2cO5FH0xUmT9oqnbBhmKb8nOkg, headers: {Host: vvvbbbnhj.taipei102.indevs.in}}, udp: true}
+  - {name: 🇺🇸 美国, server: nextmi.hajmyab.ir, port: 2053, type: vmess, uuid: 9585636a-54bc-419a-90a1-76c5c6ec74df, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: app.hajmyab.ir}}, udp: true}
+  - {name: 未知地区 27, server: gggbnh.www890604.dpdns.org, port: 443, type: trojan, password: 2bfe58f7-da1d-45df-ab43-7c665b20ee29, sni: gggbnh.www890604.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: /2cO5FH0xUmT9oqnbBhmKb8nOkg, headers: {Host: gggbnh.www890604.dpdns.org}}, udp: true}
+  - {name: 未知地区 28, server: eefrt.890699.xyz, port: 80, type: vmess, uuid: 98b419ef-83a2-4d1b-a23d-566b7f24477b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /Iu415Fpf5REYxWLpTGA5AqzZ2Mj, headers: {Host: eEFRT.890699.XYz}}, udp: true}
+  - {name: 🇩🇪 德国 18, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 未知地区 29, server: eEfrT.890699.xYz, port: 80, type: vmess, uuid: 98b419ef-83a2-4d1b-a23d-566b7f24477b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /Iu415Fpf5REYxWLpTGA5AqzZ2Mj, headers: {Host: eEFRT.890699.XYz}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 分享日记_1
-      - 分享日记_2
-      - 分享日记_3
-      - 分享日记_4
-      - 分享日记_5
-      - 分享日记_6
-      - 分享日记_7
-      - 分享日记_8
-      - 分享日记_9
-      - 分享日记_10
-      - 分享日记_11
-      - 分享日记_12
-      - 分享日记_13
-      - 分享日记_14
-      - 分享日记_15
-      - 分享日记_16
-      - 分享日记_17
-      - 分享日记_18
-      - 分享日记_19
-      - 分享日记_20
-      - 分享日记_21
-      - 分享日记_22
-      - 分享日记_23
-      - 分享日记_24
-      - 分享日记_25
-      - 分享日记_26
-      - 分享日记_27
-      - 分享日记_28
-      - 分享日记_29
-      - 分享日记_30
-      - 分享日记_31
-      - 分享日记_32
-      - 分享日记_33
-      - 分享日记_34
-      - 分享日记_35
-      - 分享日记_36
-      - 分享日记_37
-      - 分享日记_38
-      - 分享日记_39
-      - 分享日记_40
-      - 分享日记_41
-      - 分享日记_42
-      - 分享日记_43
-      - 分享日记_44
-      - 分享日记_45
-      - 分享日记_46
-      - 分享日记_47
-      - 分享日记_48
-      - 分享日记_49
-      - 分享日记_50
-      - 分享日记_51
-      - 分享日记_52
-      - 分享日记_53
-      - 分享日记_54
-      - 分享日记_55
-      - 分享日记_56
-      - 分享日记_57
-      - 分享日记_58
-      - 分享日记_59
-      - 分享日记_60
-      - 分享日记_61
-      - 分享日记_62
-      - 分享日记_63
-      - 分享日记_64
-      - 分享日记_65
-      - 分享日记_66
-      - 分享日记_67
-      - 分享日记_68
-      - 分享日记_69
-      - 分享日记_70
-      - 分享日记_71
-      - 分享日记_72
-      - 分享日记_73
-      - 分享日记_74
-      - 分享日记_75
-      - 分享日记_76
-      - 分享日记_77
-      - 分享日记_78
-      - 分享日记_79
-      - 分享日记_80
-      - 分享日记_81
-      - 分享日记_82
-      - 分享日记_83
-      - 分享日记_84
-      - 分享日记_85
-      - 分享日记_86
-      - 分享日记_87
-      - 分享日记_88
-      - 分享日记_89
-      - 分享日记_90
-      - 分享日记_91
-      - 分享日记_92
-      - 分享日记_93
-      - 分享日记_94
-      - 分享日记_95
-      - 分享日记_96
-      - 分享日记_97
-      - 分享日记_98
-      - 分享日记_99
-      - 分享日记_100
-      - 分享日记_101
-      - 分享日记_102
-      - 分享日记_103
-      - 分享日记_104
-      - 分享日记_105
-      - 分享日记_106
-      - 分享日记_107
-      - 分享日记_108
-      - 分享日记_109
-      - 分享日记_110
-      - 分享日记_111
-      - 分享日记_112
-      - 分享日记_113
-      - 分享日记_114
-      - 分享日记_115
-      - 分享日记_116
-      - 分享日记_117
-      - 分享日记_118
-      - 分享日记_119
-      - 分享日记_120
-      - 分享日记_121
-      - 分享日记_122
-      - 分享日记_123
-      - 分享日记_124
-      - 分享日记_125
-      - 分享日记_126
-      - 分享日记_127
-      - 分享日记_128
-      - 分享日记_129
-      - 分享日记_130
-      - 分享日记_131
-      - 分享日记_132
-      - 分享日记_133
-      - 分享日记_134
-      - 分享日记_135
-      - 分享日记_136
-      - 分享日记_137
-      - 分享日记_138
-      - 分享日记_139
-      - 分享日记_140
-      - 分享日记_141
-      - 分享日记_142
-      - 分享日记_143
-      - 分享日记_144
-      - 分享日记_145
-      - 分享日记_146
-      - 分享日记_147
-      - 分享日记_148
-      - 分享日记_149
-      - 分享日记_150
-      - 分享日记_151
-      - 分享日记_152
-      - 分享日记_153
-      - 分享日记_154
-      - 分享日记_155
-      - 分享日记_156
-      - 分享日记_157
-      - 分享日记_158
-      - 分享日记_159
-      - 分享日记_160
-      - 分享日记_161
-      - 分享日记_162
-      - 分享日记_163
-      - 分享日记_164
-      - 分享日记_165
-      - 分享日记_166
-      - 分享日记_167
-      - 分享日记_168
-      - 分享日记_169
-      - 分享日记_170
-      - 分享日记_171
-      - 分享日记_172
-      - 分享日记_173
-      - 分享日记_174
-      - 分享日记_175
-      - 分享日记_176
-      - 分享日记_177
-      - 分享日记_178
-      - 分享日记_179
-      - 分享日记_180
-      - 分享日记_181
-      - 分享日记_182
-      - 分享日记_183
-      - 分享日记_184
-      - 分享日记_185
-      - 分享日记_186
-      - 分享日记_187
-      - 分享日记_188
-      - 分享日记_189
-      - 分享日记_190
-      - 分享日记_191
-      - 分享日记_192
-      - 分享日记_193
-      - 分享日记_194
-      - 分享日记_195
-      - 分享日记_196
-      - 分享日记_197
-      - 分享日记_198
-      - 分享日记_199
-      - 分享日记_200
-      - 分享日记_201
-      - 分享日记_202
-      - 分享日记_203
-      - 分享日记_204
-      - 分享日记_205
-      - 分享日记_206
-      - 分享日记_207
-      - 分享日记_208
-      - 分享日记_209
-      - 分享日记_210
-      - 分享日记_211
-      - 分享日记_212
-      - 分享日记_213
-      - 分享日记_214
-      - 分享日记_215
-      - 分享日记_216
-      - 分享日记_217
-      - 分享日记_218
-      - 分享日记_219
-      - 分享日记_220
-      - 分享日记_221
-      - 分享日记_222
-      - 分享日记_223
-      - 分享日记_224
-      - 分享日记_225
-      - 分享日记_226
-      - 分享日记_227
-      - 分享日记_228
-      - 分享日记_229
+      - 未知地区
+      - 未知地区 2
+      - 未知地区 3
+      - 未知地区 4
+      - 未知地区 5
+      - 未知地区 6
+      - 未知地区 7
+      - 未知地区 8
+      - 未知地区 9
+      - 未知地区 10
+      - 🇩🇪 德国
+      - 未知地区 11
+      - 🇩🇪 德国 2
+      - 未知地区 12
+      - 🇩🇪 德国 3
+      - 🇩🇪 德国 4
+      - 🇩🇪 德国 5
+      - 未知地区 13
+      - 🇩🇪 德国 6
+      - 🇩🇪 德国 7
+      - 🇩🇪 德国 8
+      - 🇩🇪 德国 9
+      - 未知地区 14
+      - 未知地区 15
+      - 未知地区 16
+      - 🇩🇪 德国 10
+      - 🇩🇪 德国 11
+      - 🇩🇪 德国 12
+      - 🇩🇪 德国 13
+      - 🇩🇪 德国 14
+      - 🇩🇪 德国 15
+      - 🇩🇪 德国 16
+      - 🇩🇪 德国 17
+      - 未知地区 17
+      - 未知地区 18
+      - 未知地区 19
+      - 未知地区 20
+      - 未知地区 21
+      - 未知地区 22
+      - 未知地区 23
+      - 未知地区 24
+      - 未知地区 25
+      - 未知地区 26
+      - 🇺🇸 美国
+      - 未知地区 27
+      - 未知地区 28
+      - 🇩🇪 德国 18
+      - 未知地区 29
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 分享日记_1
-      - 分享日记_2
-      - 分享日记_3
-      - 分享日记_4
-      - 分享日记_5
-      - 分享日记_6
-      - 分享日记_7
-      - 分享日记_8
-      - 分享日记_9
-      - 分享日记_10
-      - 分享日记_11
-      - 分享日记_12
-      - 分享日记_13
-      - 分享日记_14
-      - 分享日记_15
-      - 分享日记_16
-      - 分享日记_17
-      - 分享日记_18
-      - 分享日记_19
-      - 分享日记_20
-      - 分享日记_21
-      - 分享日记_22
-      - 分享日记_23
-      - 分享日记_24
-      - 分享日记_25
-      - 分享日记_26
-      - 分享日记_27
-      - 分享日记_28
-      - 分享日记_29
-      - 分享日记_30
-      - 分享日记_31
-      - 分享日记_32
-      - 分享日记_33
-      - 分享日记_34
-      - 分享日记_35
-      - 分享日记_36
-      - 分享日记_37
-      - 分享日记_38
-      - 分享日记_39
-      - 分享日记_40
-      - 分享日记_41
-      - 分享日记_42
-      - 分享日记_43
-      - 分享日记_44
-      - 分享日记_45
-      - 分享日记_46
-      - 分享日记_47
-      - 分享日记_48
-      - 分享日记_49
-      - 分享日记_50
-      - 分享日记_51
-      - 分享日记_52
-      - 分享日记_53
-      - 分享日记_54
-      - 分享日记_55
-      - 分享日记_56
-      - 分享日记_57
-      - 分享日记_58
-      - 分享日记_59
-      - 分享日记_60
-      - 分享日记_61
-      - 分享日记_62
-      - 分享日记_63
-      - 分享日记_64
-      - 分享日记_65
-      - 分享日记_66
-      - 分享日记_67
-      - 分享日记_68
-      - 分享日记_69
-      - 分享日记_70
-      - 分享日记_71
-      - 分享日记_72
-      - 分享日记_73
-      - 分享日记_74
-      - 分享日记_75
-      - 分享日记_76
-      - 分享日记_77
-      - 分享日记_78
-      - 分享日记_79
-      - 分享日记_80
-      - 分享日记_81
-      - 分享日记_82
-      - 分享日记_83
-      - 分享日记_84
-      - 分享日记_85
-      - 分享日记_86
-      - 分享日记_87
-      - 分享日记_88
-      - 分享日记_89
-      - 分享日记_90
-      - 分享日记_91
-      - 分享日记_92
-      - 分享日记_93
-      - 分享日记_94
-      - 分享日记_95
-      - 分享日记_96
-      - 分享日记_97
-      - 分享日记_98
-      - 分享日记_99
-      - 分享日记_100
-      - 分享日记_101
-      - 分享日记_102
-      - 分享日记_103
-      - 分享日记_104
-      - 分享日记_105
-      - 分享日记_106
-      - 分享日记_107
-      - 分享日记_108
-      - 分享日记_109
-      - 分享日记_110
-      - 分享日记_111
-      - 分享日记_112
-      - 分享日记_113
-      - 分享日记_114
-      - 分享日记_115
-      - 分享日记_116
-      - 分享日记_117
-      - 分享日记_118
-      - 分享日记_119
-      - 分享日记_120
-      - 分享日记_121
-      - 分享日记_122
-      - 分享日记_123
-      - 分享日记_124
-      - 分享日记_125
-      - 分享日记_126
-      - 分享日记_127
-      - 分享日记_128
-      - 分享日记_129
-      - 分享日记_130
-      - 分享日记_131
-      - 分享日记_132
-      - 分享日记_133
-      - 分享日记_134
-      - 分享日记_135
-      - 分享日记_136
-      - 分享日记_137
-      - 分享日记_138
-      - 分享日记_139
-      - 分享日记_140
-      - 分享日记_141
-      - 分享日记_142
-      - 分享日记_143
-      - 分享日记_144
-      - 分享日记_145
-      - 分享日记_146
-      - 分享日记_147
-      - 分享日记_148
-      - 分享日记_149
-      - 分享日记_150
-      - 分享日记_151
-      - 分享日记_152
-      - 分享日记_153
-      - 分享日记_154
-      - 分享日记_155
-      - 分享日记_156
-      - 分享日记_157
-      - 分享日记_158
-      - 分享日记_159
-      - 分享日记_160
-      - 分享日记_161
-      - 分享日记_162
-      - 分享日记_163
-      - 分享日记_164
-      - 分享日记_165
-      - 分享日记_166
-      - 分享日记_167
-      - 分享日记_168
-      - 分享日记_169
-      - 分享日记_170
-      - 分享日记_171
-      - 分享日记_172
-      - 分享日记_173
-      - 分享日记_174
-      - 分享日记_175
-      - 分享日记_176
-      - 分享日记_177
-      - 分享日记_178
-      - 分享日记_179
-      - 分享日记_180
-      - 分享日记_181
-      - 分享日记_182
-      - 分享日记_183
-      - 分享日记_184
-      - 分享日记_185
-      - 分享日记_186
-      - 分享日记_187
-      - 分享日记_188
-      - 分享日记_189
-      - 分享日记_190
-      - 分享日记_191
-      - 分享日记_192
-      - 分享日记_193
-      - 分享日记_194
-      - 分享日记_195
-      - 分享日记_196
-      - 分享日记_197
-      - 分享日记_198
-      - 分享日记_199
-      - 分享日记_200
-      - 分享日记_201
-      - 分享日记_202
-      - 分享日记_203
-      - 分享日记_204
-      - 分享日记_205
-      - 分享日记_206
-      - 分享日记_207
-      - 分享日记_208
-      - 分享日记_209
-      - 分享日记_210
-      - 分享日记_211
-      - 分享日记_212
-      - 分享日记_213
-      - 分享日记_214
-      - 分享日记_215
-      - 分享日记_216
-      - 分享日记_217
-      - 分享日记_218
-      - 分享日记_219
-      - 分享日记_220
-      - 分享日记_221
-      - 分享日记_222
-      - 分享日记_223
-      - 分享日记_224
-      - 分享日记_225
-      - 分享日记_226
-      - 分享日记_227
-      - 分享日记_228
-      - 分享日记_229
+      - 未知地区
+      - 未知地区 2
+      - 未知地区 3
+      - 未知地区 4
+      - 未知地区 5
+      - 未知地区 6
+      - 未知地区 7
+      - 未知地区 8
+      - 未知地区 9
+      - 未知地区 10
+      - 🇩🇪 德国
+      - 未知地区 11
+      - 🇩🇪 德国 2
+      - 未知地区 12
+      - 🇩🇪 德国 3
+      - 🇩🇪 德国 4
+      - 🇩🇪 德国 5
+      - 未知地区 13
+      - 🇩🇪 德国 6
+      - 🇩🇪 德国 7
+      - 🇩🇪 德国 8
+      - 🇩🇪 德国 9
+      - 未知地区 14
+      - 未知地区 15
+      - 未知地区 16
+      - 🇩🇪 德国 10
+      - 🇩🇪 德国 11
+      - 🇩🇪 德国 12
+      - 🇩🇪 德国 13
+      - 🇩🇪 德国 14
+      - 🇩🇪 德国 15
+      - 🇩🇪 德国 16
+      - 🇩🇪 德国 17
+      - 未知地区 17
+      - 未知地区 18
+      - 未知地区 19
+      - 未知地区 20
+      - 未知地区 21
+      - 未知地区 22
+      - 未知地区 23
+      - 未知地区 24
+      - 未知地区 25
+      - 未知地区 26
+      - 🇺🇸 美国
+      - 未知地区 27
+      - 未知地区 28
+      - 🇩🇪 德国 18
+      - 未知地区 29
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 分享日记_1
-      - 分享日记_2
-      - 分享日记_3
-      - 分享日记_4
-      - 分享日记_5
-      - 分享日记_6
-      - 分享日记_7
-      - 分享日记_8
-      - 分享日记_9
-      - 分享日记_10
-      - 分享日记_11
-      - 分享日记_12
-      - 分享日记_13
-      - 分享日记_14
-      - 分享日记_15
-      - 分享日记_16
-      - 分享日记_17
-      - 分享日记_18
-      - 分享日记_19
-      - 分享日记_20
-      - 分享日记_21
-      - 分享日记_22
-      - 分享日记_23
-      - 分享日记_24
-      - 分享日记_25
-      - 分享日记_26
-      - 分享日记_27
-      - 分享日记_28
-      - 分享日记_29
-      - 分享日记_30
-      - 分享日记_31
-      - 分享日记_32
-      - 分享日记_33
-      - 分享日记_34
-      - 分享日记_35
-      - 分享日记_36
-      - 分享日记_37
-      - 分享日记_38
-      - 分享日记_39
-      - 分享日记_40
-      - 分享日记_41
-      - 分享日记_42
-      - 分享日记_43
-      - 分享日记_44
-      - 分享日记_45
-      - 分享日记_46
-      - 分享日记_47
-      - 分享日记_48
-      - 分享日记_49
-      - 分享日记_50
-      - 分享日记_51
-      - 分享日记_52
-      - 分享日记_53
-      - 分享日记_54
-      - 分享日记_55
-      - 分享日记_56
-      - 分享日记_57
-      - 分享日记_58
-      - 分享日记_59
-      - 分享日记_60
-      - 分享日记_61
-      - 分享日记_62
-      - 分享日记_63
-      - 分享日记_64
-      - 分享日记_65
-      - 分享日记_66
-      - 分享日记_67
-      - 分享日记_68
-      - 分享日记_69
-      - 分享日记_70
-      - 分享日记_71
-      - 分享日记_72
-      - 分享日记_73
-      - 分享日记_74
-      - 分享日记_75
-      - 分享日记_76
-      - 分享日记_77
-      - 分享日记_78
-      - 分享日记_79
-      - 分享日记_80
-      - 分享日记_81
-      - 分享日记_82
-      - 分享日记_83
-      - 分享日记_84
-      - 分享日记_85
-      - 分享日记_86
-      - 分享日记_87
-      - 分享日记_88
-      - 分享日记_89
-      - 分享日记_90
-      - 分享日记_91
-      - 分享日记_92
-      - 分享日记_93
-      - 分享日记_94
-      - 分享日记_95
-      - 分享日记_96
-      - 分享日记_97
-      - 分享日记_98
-      - 分享日记_99
-      - 分享日记_100
-      - 分享日记_101
-      - 分享日记_102
-      - 分享日记_103
-      - 分享日记_104
-      - 分享日记_105
-      - 分享日记_106
-      - 分享日记_107
-      - 分享日记_108
-      - 分享日记_109
-      - 分享日记_110
-      - 分享日记_111
-      - 分享日记_112
-      - 分享日记_113
-      - 分享日记_114
-      - 分享日记_115
-      - 分享日记_116
-      - 分享日记_117
-      - 分享日记_118
-      - 分享日记_119
-      - 分享日记_120
-      - 分享日记_121
-      - 分享日记_122
-      - 分享日记_123
-      - 分享日记_124
-      - 分享日记_125
-      - 分享日记_126
-      - 分享日记_127
-      - 分享日记_128
-      - 分享日记_129
-      - 分享日记_130
-      - 分享日记_131
-      - 分享日记_132
-      - 分享日记_133
-      - 分享日记_134
-      - 分享日记_135
-      - 分享日记_136
-      - 分享日记_137
-      - 分享日记_138
-      - 分享日记_139
-      - 分享日记_140
-      - 分享日记_141
-      - 分享日记_142
-      - 分享日记_143
-      - 分享日记_144
-      - 分享日记_145
-      - 分享日记_146
-      - 分享日记_147
-      - 分享日记_148
-      - 分享日记_149
-      - 分享日记_150
-      - 分享日记_151
-      - 分享日记_152
-      - 分享日记_153
-      - 分享日记_154
-      - 分享日记_155
-      - 分享日记_156
-      - 分享日记_157
-      - 分享日记_158
-      - 分享日记_159
-      - 分享日记_160
-      - 分享日记_161
-      - 分享日记_162
-      - 分享日记_163
-      - 分享日记_164
-      - 分享日记_165
-      - 分享日记_166
-      - 分享日记_167
-      - 分享日记_168
-      - 分享日记_169
-      - 分享日记_170
-      - 分享日记_171
-      - 分享日记_172
-      - 分享日记_173
-      - 分享日记_174
-      - 分享日记_175
-      - 分享日记_176
-      - 分享日记_177
-      - 分享日记_178
-      - 分享日记_179
-      - 分享日记_180
-      - 分享日记_181
-      - 分享日记_182
-      - 分享日记_183
-      - 分享日记_184
-      - 分享日记_185
-      - 分享日记_186
-      - 分享日记_187
-      - 分享日记_188
-      - 分享日记_189
-      - 分享日记_190
-      - 分享日记_191
-      - 分享日记_192
-      - 分享日记_193
-      - 分享日记_194
-      - 分享日记_195
-      - 分享日记_196
-      - 分享日记_197
-      - 分享日记_198
-      - 分享日记_199
-      - 分享日记_200
-      - 分享日记_201
-      - 分享日记_202
-      - 分享日记_203
-      - 分享日记_204
-      - 分享日记_205
-      - 分享日记_206
-      - 分享日记_207
-      - 分享日记_208
-      - 分享日记_209
-      - 分享日记_210
-      - 分享日记_211
-      - 分享日记_212
-      - 分享日记_213
-      - 分享日记_214
-      - 分享日记_215
-      - 分享日记_216
-      - 分享日记_217
-      - 分享日记_218
-      - 分享日记_219
-      - 分享日记_220
-      - 分享日记_221
-      - 分享日记_222
-      - 分享日记_223
-      - 分享日记_224
-      - 分享日记_225
-      - 分享日记_226
-      - 分享日记_227
-      - 分享日记_228
-      - 分享日记_229
+      - 未知地区
+      - 未知地区 2
+      - 未知地区 3
+      - 未知地区 4
+      - 未知地区 5
+      - 未知地区 6
+      - 未知地区 7
+      - 未知地区 8
+      - 未知地区 9
+      - 未知地区 10
+      - 🇩🇪 德国
+      - 未知地区 11
+      - 🇩🇪 德国 2
+      - 未知地区 12
+      - 🇩🇪 德国 3
+      - 🇩🇪 德国 4
+      - 🇩🇪 德国 5
+      - 未知地区 13
+      - 🇩🇪 德国 6
+      - 🇩🇪 德国 7
+      - 🇩🇪 德国 8
+      - 🇩🇪 德国 9
+      - 未知地区 14
+      - 未知地区 15
+      - 未知地区 16
+      - 🇩🇪 德国 10
+      - 🇩🇪 德国 11
+      - 🇩🇪 德国 12
+      - 🇩🇪 德国 13
+      - 🇩🇪 德国 14
+      - 🇩🇪 德国 15
+      - 🇩🇪 德国 16
+      - 🇩🇪 德国 17
+      - 未知地区 17
+      - 未知地区 18
+      - 未知地区 19
+      - 未知地区 20
+      - 未知地区 21
+      - 未知地区 22
+      - 未知地区 23
+      - 未知地区 24
+      - 未知地区 25
+      - 未知地区 26
+      - 🇺🇸 美国
+      - 未知地区 27
+      - 未知地区 28
+      - 🇩🇪 德国 18
+      - 未知地区 29
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 分享日记_1
-      - 分享日记_2
-      - 分享日记_3
-      - 分享日记_4
-      - 分享日记_5
-      - 分享日记_6
-      - 分享日记_7
-      - 分享日记_8
-      - 分享日记_9
-      - 分享日记_10
-      - 分享日记_11
-      - 分享日记_12
-      - 分享日记_13
-      - 分享日记_14
-      - 分享日记_15
-      - 分享日记_16
-      - 分享日记_17
-      - 分享日记_18
-      - 分享日记_19
-      - 分享日记_20
-      - 分享日记_21
-      - 分享日记_22
-      - 分享日记_23
-      - 分享日记_24
-      - 分享日记_25
-      - 分享日记_26
-      - 分享日记_27
-      - 分享日记_28
-      - 分享日记_29
-      - 分享日记_30
-      - 分享日记_31
-      - 分享日记_32
-      - 分享日记_33
-      - 分享日记_34
-      - 分享日记_35
-      - 分享日记_36
-      - 分享日记_37
-      - 分享日记_38
-      - 分享日记_39
-      - 分享日记_40
-      - 分享日记_41
-      - 分享日记_42
-      - 分享日记_43
-      - 分享日记_44
-      - 分享日记_45
-      - 分享日记_46
-      - 分享日记_47
-      - 分享日记_48
-      - 分享日记_49
-      - 分享日记_50
-      - 分享日记_51
-      - 分享日记_52
-      - 分享日记_53
-      - 分享日记_54
-      - 分享日记_55
-      - 分享日记_56
-      - 分享日记_57
-      - 分享日记_58
-      - 分享日记_59
-      - 分享日记_60
-      - 分享日记_61
-      - 分享日记_62
-      - 分享日记_63
-      - 分享日记_64
-      - 分享日记_65
-      - 分享日记_66
-      - 分享日记_67
-      - 分享日记_68
-      - 分享日记_69
-      - 分享日记_70
-      - 分享日记_71
-      - 分享日记_72
-      - 分享日记_73
-      - 分享日记_74
-      - 分享日记_75
-      - 分享日记_76
-      - 分享日记_77
-      - 分享日记_78
-      - 分享日记_79
-      - 分享日记_80
-      - 分享日记_81
-      - 分享日记_82
-      - 分享日记_83
-      - 分享日记_84
-      - 分享日记_85
-      - 分享日记_86
-      - 分享日记_87
-      - 分享日记_88
-      - 分享日记_89
-      - 分享日记_90
-      - 分享日记_91
-      - 分享日记_92
-      - 分享日记_93
-      - 分享日记_94
-      - 分享日记_95
-      - 分享日记_96
-      - 分享日记_97
-      - 分享日记_98
-      - 分享日记_99
-      - 分享日记_100
-      - 分享日记_101
-      - 分享日记_102
-      - 分享日记_103
-      - 分享日记_104
-      - 分享日记_105
-      - 分享日记_106
-      - 分享日记_107
-      - 分享日记_108
-      - 分享日记_109
-      - 分享日记_110
-      - 分享日记_111
-      - 分享日记_112
-      - 分享日记_113
-      - 分享日记_114
-      - 分享日记_115
-      - 分享日记_116
-      - 分享日记_117
-      - 分享日记_118
-      - 分享日记_119
-      - 分享日记_120
-      - 分享日记_121
-      - 分享日记_122
-      - 分享日记_123
-      - 分享日记_124
-      - 分享日记_125
-      - 分享日记_126
-      - 分享日记_127
-      - 分享日记_128
-      - 分享日记_129
-      - 分享日记_130
-      - 分享日记_131
-      - 分享日记_132
-      - 分享日记_133
-      - 分享日记_134
-      - 分享日记_135
-      - 分享日记_136
-      - 分享日记_137
-      - 分享日记_138
-      - 分享日记_139
-      - 分享日记_140
-      - 分享日记_141
-      - 分享日记_142
-      - 分享日记_143
-      - 分享日记_144
-      - 分享日记_145
-      - 分享日记_146
-      - 分享日记_147
-      - 分享日记_148
-      - 分享日记_149
-      - 分享日记_150
-      - 分享日记_151
-      - 分享日记_152
-      - 分享日记_153
-      - 分享日记_154
-      - 分享日记_155
-      - 分享日记_156
-      - 分享日记_157
-      - 分享日记_158
-      - 分享日记_159
-      - 分享日记_160
-      - 分享日记_161
-      - 分享日记_162
-      - 分享日记_163
-      - 分享日记_164
-      - 分享日记_165
-      - 分享日记_166
-      - 分享日记_167
-      - 分享日记_168
-      - 分享日记_169
-      - 分享日记_170
-      - 分享日记_171
-      - 分享日记_172
-      - 分享日记_173
-      - 分享日记_174
-      - 分享日记_175
-      - 分享日记_176
-      - 分享日记_177
-      - 分享日记_178
-      - 分享日记_179
-      - 分享日记_180
-      - 分享日记_181
-      - 分享日记_182
-      - 分享日记_183
-      - 分享日记_184
-      - 分享日记_185
-      - 分享日记_186
-      - 分享日记_187
-      - 分享日记_188
-      - 分享日记_189
-      - 分享日记_190
-      - 分享日记_191
-      - 分享日记_192
-      - 分享日记_193
-      - 分享日记_194
-      - 分享日记_195
-      - 分享日记_196
-      - 分享日记_197
-      - 分享日记_198
-      - 分享日记_199
-      - 分享日记_200
-      - 分享日记_201
-      - 分享日记_202
-      - 分享日记_203
-      - 分享日记_204
-      - 分享日记_205
-      - 分享日记_206
-      - 分享日记_207
-      - 分享日记_208
-      - 分享日记_209
-      - 分享日记_210
-      - 分享日记_211
-      - 分享日记_212
-      - 分享日记_213
-      - 分享日记_214
-      - 分享日记_215
-      - 分享日记_216
-      - 分享日记_217
-      - 分享日记_218
-      - 分享日记_219
-      - 分享日记_220
-      - 分享日记_221
-      - 分享日记_222
-      - 分享日记_223
-      - 分享日记_224
-      - 分享日记_225
-      - 分享日记_226
-      - 分享日记_227
-      - 分享日记_228
-      - 分享日记_229
+      - 未知地区
+      - 未知地区 2
+      - 未知地区 3
+      - 未知地区 4
+      - 未知地区 5
+      - 未知地区 6
+      - 未知地区 7
+      - 未知地区 8
+      - 未知地区 9
+      - 未知地区 10
+      - 🇩🇪 德国
+      - 未知地区 11
+      - 🇩🇪 德国 2
+      - 未知地区 12
+      - 🇩🇪 德国 3
+      - 🇩🇪 德国 4
+      - 🇩🇪 德国 5
+      - 未知地区 13
+      - 🇩🇪 德国 6
+      - 🇩🇪 德国 7
+      - 🇩🇪 德国 8
+      - 🇩🇪 德国 9
+      - 未知地区 14
+      - 未知地区 15
+      - 未知地区 16
+      - 🇩🇪 德国 10
+      - 🇩🇪 德国 11
+      - 🇩🇪 德国 12
+      - 🇩🇪 德国 13
+      - 🇩🇪 德国 14
+      - 🇩🇪 德国 15
+      - 🇩🇪 德国 16
+      - 🇩🇪 德国 17
+      - 未知地区 17
+      - 未知地区 18
+      - 未知地区 19
+      - 未知地区 20
+      - 未知地区 21
+      - 未知地区 22
+      - 未知地区 23
+      - 未知地区 24
+      - 未知地区 25
+      - 未知地区 26
+      - 🇺🇸 美国
+      - 未知地区 27
+      - 未知地区 28
+      - 🇩🇪 德国 18
+      - 未知地区 29
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 分享日记_1
-      - 分享日记_2
-      - 分享日记_3
-      - 分享日记_4
-      - 分享日记_5
-      - 分享日记_6
-      - 分享日记_7
-      - 分享日记_8
-      - 分享日记_9
-      - 分享日记_10
-      - 分享日记_11
-      - 分享日记_12
-      - 分享日记_13
-      - 分享日记_14
-      - 分享日记_15
-      - 分享日记_16
-      - 分享日记_17
-      - 分享日记_18
-      - 分享日记_19
-      - 分享日记_20
-      - 分享日记_21
-      - 分享日记_22
-      - 分享日记_23
-      - 分享日记_24
-      - 分享日记_25
-      - 分享日记_26
-      - 分享日记_27
-      - 分享日记_28
-      - 分享日记_29
-      - 分享日记_30
-      - 分享日记_31
-      - 分享日记_32
-      - 分享日记_33
-      - 分享日记_34
-      - 分享日记_35
-      - 分享日记_36
-      - 分享日记_37
-      - 分享日记_38
-      - 分享日记_39
-      - 分享日记_40
-      - 分享日记_41
-      - 分享日记_42
-      - 分享日记_43
-      - 分享日记_44
-      - 分享日记_45
-      - 分享日记_46
-      - 分享日记_47
-      - 分享日记_48
-      - 分享日记_49
-      - 分享日记_50
-      - 分享日记_51
-      - 分享日记_52
-      - 分享日记_53
-      - 分享日记_54
-      - 分享日记_55
-      - 分享日记_56
-      - 分享日记_57
-      - 分享日记_58
-      - 分享日记_59
-      - 分享日记_60
-      - 分享日记_61
-      - 分享日记_62
-      - 分享日记_63
-      - 分享日记_64
-      - 分享日记_65
-      - 分享日记_66
-      - 分享日记_67
-      - 分享日记_68
-      - 分享日记_69
-      - 分享日记_70
-      - 分享日记_71
-      - 分享日记_72
-      - 分享日记_73
-      - 分享日记_74
-      - 分享日记_75
-      - 分享日记_76
-      - 分享日记_77
-      - 分享日记_78
-      - 分享日记_79
-      - 分享日记_80
-      - 分享日记_81
-      - 分享日记_82
-      - 分享日记_83
-      - 分享日记_84
-      - 分享日记_85
-      - 分享日记_86
-      - 分享日记_87
-      - 分享日记_88
-      - 分享日记_89
-      - 分享日记_90
-      - 分享日记_91
-      - 分享日记_92
-      - 分享日记_93
-      - 分享日记_94
-      - 分享日记_95
-      - 分享日记_96
-      - 分享日记_97
-      - 分享日记_98
-      - 分享日记_99
-      - 分享日记_100
-      - 分享日记_101
-      - 分享日记_102
-      - 分享日记_103
-      - 分享日记_104
-      - 分享日记_105
-      - 分享日记_106
-      - 分享日记_107
-      - 分享日记_108
-      - 分享日记_109
-      - 分享日记_110
-      - 分享日记_111
-      - 分享日记_112
-      - 分享日记_113
-      - 分享日记_114
-      - 分享日记_115
-      - 分享日记_116
-      - 分享日记_117
-      - 分享日记_118
-      - 分享日记_119
-      - 分享日记_120
-      - 分享日记_121
-      - 分享日记_122
-      - 分享日记_123
-      - 分享日记_124
-      - 分享日记_125
-      - 分享日记_126
-      - 分享日记_127
-      - 分享日记_128
-      - 分享日记_129
-      - 分享日记_130
-      - 分享日记_131
-      - 分享日记_132
-      - 分享日记_133
-      - 分享日记_134
-      - 分享日记_135
-      - 分享日记_136
-      - 分享日记_137
-      - 分享日记_138
-      - 分享日记_139
-      - 分享日记_140
-      - 分享日记_141
-      - 分享日记_142
-      - 分享日记_143
-      - 分享日记_144
-      - 分享日记_145
-      - 分享日记_146
-      - 分享日记_147
-      - 分享日记_148
-      - 分享日记_149
-      - 分享日记_150
-      - 分享日记_151
-      - 分享日记_152
-      - 分享日记_153
-      - 分享日记_154
-      - 分享日记_155
-      - 分享日记_156
-      - 分享日记_157
-      - 分享日记_158
-      - 分享日记_159
-      - 分享日记_160
-      - 分享日记_161
-      - 分享日记_162
-      - 分享日记_163
-      - 分享日记_164
-      - 分享日记_165
-      - 分享日记_166
-      - 分享日记_167
-      - 分享日记_168
-      - 分享日记_169
-      - 分享日记_170
-      - 分享日记_171
-      - 分享日记_172
-      - 分享日记_173
-      - 分享日记_174
-      - 分享日记_175
-      - 分享日记_176
-      - 分享日记_177
-      - 分享日记_178
-      - 分享日记_179
-      - 分享日记_180
-      - 分享日记_181
-      - 分享日记_182
-      - 分享日记_183
-      - 分享日记_184
-      - 分享日记_185
-      - 分享日记_186
-      - 分享日记_187
-      - 分享日记_188
-      - 分享日记_189
-      - 分享日记_190
-      - 分享日记_191
-      - 分享日记_192
-      - 分享日记_193
-      - 分享日记_194
-      - 分享日记_195
-      - 分享日记_196
-      - 分享日记_197
-      - 分享日记_198
-      - 分享日记_199
-      - 分享日记_200
-      - 分享日记_201
-      - 分享日记_202
-      - 分享日记_203
-      - 分享日记_204
-      - 分享日记_205
-      - 分享日记_206
-      - 分享日记_207
-      - 分享日记_208
-      - 分享日记_209
-      - 分享日记_210
-      - 分享日记_211
-      - 分享日记_212
-      - 分享日记_213
-      - 分享日记_214
-      - 分享日记_215
-      - 分享日记_216
-      - 分享日记_217
-      - 分享日记_218
-      - 分享日记_219
-      - 分享日记_220
-      - 分享日记_221
-      - 分享日记_222
-      - 分享日记_223
-      - 分享日记_224
-      - 分享日记_225
-      - 分享日记_226
-      - 分享日记_227
-      - 分享日记_228
-      - 分享日记_229
+      - 未知地区
+      - 未知地区 2
+      - 未知地区 3
+      - 未知地区 4
+      - 未知地区 5
+      - 未知地区 6
+      - 未知地区 7
+      - 未知地区 8
+      - 未知地区 9
+      - 未知地区 10
+      - 🇩🇪 德国
+      - 未知地区 11
+      - 🇩🇪 德国 2
+      - 未知地区 12
+      - 🇩🇪 德国 3
+      - 🇩🇪 德国 4
+      - 🇩🇪 德国 5
+      - 未知地区 13
+      - 🇩🇪 德国 6
+      - 🇩🇪 德国 7
+      - 🇩🇪 德国 8
+      - 🇩🇪 德国 9
+      - 未知地区 14
+      - 未知地区 15
+      - 未知地区 16
+      - 🇩🇪 德国 10
+      - 🇩🇪 德国 11
+      - 🇩🇪 德国 12
+      - 🇩🇪 德国 13
+      - 🇩🇪 德国 14
+      - 🇩🇪 德国 15
+      - 🇩🇪 德国 16
+      - 🇩🇪 德国 17
+      - 未知地区 17
+      - 未知地区 18
+      - 未知地区 19
+      - 未知地区 20
+      - 未知地区 21
+      - 未知地区 22
+      - 未知地区 23
+      - 未知地区 24
+      - 未知地区 25
+      - 未知地区 26
+      - 🇺🇸 美国
+      - 未知地区 27
+      - 未知地区 28
+      - 🇩🇪 德国 18
+      - 未知地区 29
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 分享日记_1
-      - 分享日记_2
-      - 分享日记_3
-      - 分享日记_4
-      - 分享日记_5
-      - 分享日记_6
-      - 分享日记_7
-      - 分享日记_8
-      - 分享日记_9
-      - 分享日记_10
-      - 分享日记_11
-      - 分享日记_12
-      - 分享日记_13
-      - 分享日记_14
-      - 分享日记_15
-      - 分享日记_16
-      - 分享日记_17
-      - 分享日记_18
-      - 分享日记_19
-      - 分享日记_20
-      - 分享日记_21
-      - 分享日记_22
-      - 分享日记_23
-      - 分享日记_24
-      - 分享日记_25
-      - 分享日记_26
-      - 分享日记_27
-      - 分享日记_28
-      - 分享日记_29
-      - 分享日记_30
-      - 分享日记_31
-      - 分享日记_32
-      - 分享日记_33
-      - 分享日记_34
-      - 分享日记_35
-      - 分享日记_36
-      - 分享日记_37
-      - 分享日记_38
-      - 分享日记_39
-      - 分享日记_40
-      - 分享日记_41
-      - 分享日记_42
-      - 分享日记_43
-      - 分享日记_44
-      - 分享日记_45
-      - 分享日记_46
-      - 分享日记_47
-      - 分享日记_48
-      - 分享日记_49
-      - 分享日记_50
-      - 分享日记_51
-      - 分享日记_52
-      - 分享日记_53
-      - 分享日记_54
-      - 分享日记_55
-      - 分享日记_56
-      - 分享日记_57
-      - 分享日记_58
-      - 分享日记_59
-      - 分享日记_60
-      - 分享日记_61
-      - 分享日记_62
-      - 分享日记_63
-      - 分享日记_64
-      - 分享日记_65
-      - 分享日记_66
-      - 分享日记_67
-      - 分享日记_68
-      - 分享日记_69
-      - 分享日记_70
-      - 分享日记_71
-      - 分享日记_72
-      - 分享日记_73
-      - 分享日记_74
-      - 分享日记_75
-      - 分享日记_76
-      - 分享日记_77
-      - 分享日记_78
-      - 分享日记_79
-      - 分享日记_80
-      - 分享日记_81
-      - 分享日记_82
-      - 分享日记_83
-      - 分享日记_84
-      - 分享日记_85
-      - 分享日记_86
-      - 分享日记_87
-      - 分享日记_88
-      - 分享日记_89
-      - 分享日记_90
-      - 分享日记_91
-      - 分享日记_92
-      - 分享日记_93
-      - 分享日记_94
-      - 分享日记_95
-      - 分享日记_96
-      - 分享日记_97
-      - 分享日记_98
-      - 分享日记_99
-      - 分享日记_100
-      - 分享日记_101
-      - 分享日记_102
-      - 分享日记_103
-      - 分享日记_104
-      - 分享日记_105
-      - 分享日记_106
-      - 分享日记_107
-      - 分享日记_108
-      - 分享日记_109
-      - 分享日记_110
-      - 分享日记_111
-      - 分享日记_112
-      - 分享日记_113
-      - 分享日记_114
-      - 分享日记_115
-      - 分享日记_116
-      - 分享日记_117
-      - 分享日记_118
-      - 分享日记_119
-      - 分享日记_120
-      - 分享日记_121
-      - 分享日记_122
-      - 分享日记_123
-      - 分享日记_124
-      - 分享日记_125
-      - 分享日记_126
-      - 分享日记_127
-      - 分享日记_128
-      - 分享日记_129
-      - 分享日记_130
-      - 分享日记_131
-      - 分享日记_132
-      - 分享日记_133
-      - 分享日记_134
-      - 分享日记_135
-      - 分享日记_136
-      - 分享日记_137
-      - 分享日记_138
-      - 分享日记_139
-      - 分享日记_140
-      - 分享日记_141
-      - 分享日记_142
-      - 分享日记_143
-      - 分享日记_144
-      - 分享日记_145
-      - 分享日记_146
-      - 分享日记_147
-      - 分享日记_148
-      - 分享日记_149
-      - 分享日记_150
-      - 分享日记_151
-      - 分享日记_152
-      - 分享日记_153
-      - 分享日记_154
-      - 分享日记_155
-      - 分享日记_156
-      - 分享日记_157
-      - 分享日记_158
-      - 分享日记_159
-      - 分享日记_160
-      - 分享日记_161
-      - 分享日记_162
-      - 分享日记_163
-      - 分享日记_164
-      - 分享日记_165
-      - 分享日记_166
-      - 分享日记_167
-      - 分享日记_168
-      - 分享日记_169
-      - 分享日记_170
-      - 分享日记_171
-      - 分享日记_172
-      - 分享日记_173
-      - 分享日记_174
-      - 分享日记_175
-      - 分享日记_176
-      - 分享日记_177
-      - 分享日记_178
-      - 分享日记_179
-      - 分享日记_180
-      - 分享日记_181
-      - 分享日记_182
-      - 分享日记_183
-      - 分享日记_184
-      - 分享日记_185
-      - 分享日记_186
-      - 分享日记_187
-      - 分享日记_188
-      - 分享日记_189
-      - 分享日记_190
-      - 分享日记_191
-      - 分享日记_192
-      - 分享日记_193
-      - 分享日记_194
-      - 分享日记_195
-      - 分享日记_196
-      - 分享日记_197
-      - 分享日记_198
-      - 分享日记_199
-      - 分享日记_200
-      - 分享日记_201
-      - 分享日记_202
-      - 分享日记_203
-      - 分享日记_204
-      - 分享日记_205
-      - 分享日记_206
-      - 分享日记_207
-      - 分享日记_208
-      - 分享日记_209
-      - 分享日记_210
-      - 分享日记_211
-      - 分享日记_212
-      - 分享日记_213
-      - 分享日记_214
-      - 分享日记_215
-      - 分享日记_216
-      - 分享日记_217
-      - 分享日记_218
-      - 分享日记_219
-      - 分享日记_220
-      - 分享日记_221
-      - 分享日记_222
-      - 分享日记_223
-      - 分享日记_224
-      - 分享日记_225
-      - 分享日记_226
-      - 分享日记_227
-      - 分享日记_228
-      - 分享日记_229
+      - 未知地区
+      - 未知地区 2
+      - 未知地区 3
+      - 未知地区 4
+      - 未知地区 5
+      - 未知地区 6
+      - 未知地区 7
+      - 未知地区 8
+      - 未知地区 9
+      - 未知地区 10
+      - 🇩🇪 德国
+      - 未知地区 11
+      - 🇩🇪 德国 2
+      - 未知地区 12
+      - 🇩🇪 德国 3
+      - 🇩🇪 德国 4
+      - 🇩🇪 德国 5
+      - 未知地区 13
+      - 🇩🇪 德国 6
+      - 🇩🇪 德国 7
+      - 🇩🇪 德国 8
+      - 🇩🇪 德国 9
+      - 未知地区 14
+      - 未知地区 15
+      - 未知地区 16
+      - 🇩🇪 德国 10
+      - 🇩🇪 德国 11
+      - 🇩🇪 德国 12
+      - 🇩🇪 德国 13
+      - 🇩🇪 德国 14
+      - 🇩🇪 德国 15
+      - 🇩🇪 德国 16
+      - 🇩🇪 德国 17
+      - 未知地区 17
+      - 未知地区 18
+      - 未知地区 19
+      - 未知地区 20
+      - 未知地区 21
+      - 未知地区 22
+      - 未知地区 23
+      - 未知地区 24
+      - 未知地区 25
+      - 未知地区 26
+      - 🇺🇸 美国
+      - 未知地区 27
+      - 未知地区 28
+      - 🇩🇪 德国 18
+      - 未知地区 29
+  - name: 📢 谷歌FCM
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - 未知地区
+      - 未知地区 2
+      - 未知地区 3
+      - 未知地区 4
+      - 未知地区 5
+      - 未知地区 6
+      - 未知地区 7
+      - 未知地区 8
+      - 未知地区 9
+      - 未知地区 10
+      - 🇩🇪 德国
+      - 未知地区 11
+      - 🇩🇪 德国 2
+      - 未知地区 12
+      - 🇩🇪 德国 3
+      - 🇩🇪 德国 4
+      - 🇩🇪 德国 5
+      - 未知地区 13
+      - 🇩🇪 德国 6
+      - 🇩🇪 德国 7
+      - 🇩🇪 德国 8
+      - 🇩🇪 德国 9
+      - 未知地区 14
+      - 未知地区 15
+      - 未知地区 16
+      - 🇩🇪 德国 10
+      - 🇩🇪 德国 11
+      - 🇩🇪 德国 12
+      - 🇩🇪 德国 13
+      - 🇩🇪 德国 14
+      - 🇩🇪 德国 15
+      - 🇩🇪 德国 16
+      - 🇩🇪 德国 17
+      - 未知地区 17
+      - 未知地区 18
+      - 未知地区 19
+      - 未知地区 20
+      - 未知地区 21
+      - 未知地区 22
+      - 未知地区 23
+      - 未知地区 24
+      - 未知地区 25
+      - 未知地区 26
+      - 🇺🇸 美国
+      - 未知地区 27
+      - 未知地区 28
+      - 🇩🇪 德国 18
+      - 未知地区 29
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1744,251 +450,67 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 分享日记_1
-      - 分享日记_2
-      - 分享日记_3
-      - 分享日记_4
-      - 分享日记_5
-      - 分享日记_6
-      - 分享日记_7
-      - 分享日记_8
-      - 分享日记_9
-      - 分享日记_10
-      - 分享日记_11
-      - 分享日记_12
-      - 分享日记_13
-      - 分享日记_14
-      - 分享日记_15
-      - 分享日记_16
-      - 分享日记_17
-      - 分享日记_18
-      - 分享日记_19
-      - 分享日记_20
-      - 分享日记_21
-      - 分享日记_22
-      - 分享日记_23
-      - 分享日记_24
-      - 分享日记_25
-      - 分享日记_26
-      - 分享日记_27
-      - 分享日记_28
-      - 分享日记_29
-      - 分享日记_30
-      - 分享日记_31
-      - 分享日记_32
-      - 分享日记_33
-      - 分享日记_34
-      - 分享日记_35
-      - 分享日记_36
-      - 分享日记_37
-      - 分享日记_38
-      - 分享日记_39
-      - 分享日记_40
-      - 分享日记_41
-      - 分享日记_42
-      - 分享日记_43
-      - 分享日记_44
-      - 分享日记_45
-      - 分享日记_46
-      - 分享日记_47
-      - 分享日记_48
-      - 分享日记_49
-      - 分享日记_50
-      - 分享日记_51
-      - 分享日记_52
-      - 分享日记_53
-      - 分享日记_54
-      - 分享日记_55
-      - 分享日记_56
-      - 分享日记_57
-      - 分享日记_58
-      - 分享日记_59
-      - 分享日记_60
-      - 分享日记_61
-      - 分享日记_62
-      - 分享日记_63
-      - 分享日记_64
-      - 分享日记_65
-      - 分享日记_66
-      - 分享日记_67
-      - 分享日记_68
-      - 分享日记_69
-      - 分享日记_70
-      - 分享日记_71
-      - 分享日记_72
-      - 分享日记_73
-      - 分享日记_74
-      - 分享日记_75
-      - 分享日记_76
-      - 分享日记_77
-      - 分享日记_78
-      - 分享日记_79
-      - 分享日记_80
-      - 分享日记_81
-      - 分享日记_82
-      - 分享日记_83
-      - 分享日记_84
-      - 分享日记_85
-      - 分享日记_86
-      - 分享日记_87
-      - 分享日记_88
-      - 分享日记_89
-      - 分享日记_90
-      - 分享日记_91
-      - 分享日记_92
-      - 分享日记_93
-      - 分享日记_94
-      - 分享日记_95
-      - 分享日记_96
-      - 分享日记_97
-      - 分享日记_98
-      - 分享日记_99
-      - 分享日记_100
-      - 分享日记_101
-      - 分享日记_102
-      - 分享日记_103
-      - 分享日记_104
-      - 分享日记_105
-      - 分享日记_106
-      - 分享日记_107
-      - 分享日记_108
-      - 分享日记_109
-      - 分享日记_110
-      - 分享日记_111
-      - 分享日记_112
-      - 分享日记_113
-      - 分享日记_114
-      - 分享日记_115
-      - 分享日记_116
-      - 分享日记_117
-      - 分享日记_118
-      - 分享日记_119
-      - 分享日记_120
-      - 分享日记_121
-      - 分享日记_122
-      - 分享日记_123
-      - 分享日记_124
-      - 分享日记_125
-      - 分享日记_126
-      - 分享日记_127
-      - 分享日记_128
-      - 分享日记_129
-      - 分享日记_130
-      - 分享日记_131
-      - 分享日记_132
-      - 分享日记_133
-      - 分享日记_134
-      - 分享日记_135
-      - 分享日记_136
-      - 分享日记_137
-      - 分享日记_138
-      - 分享日记_139
-      - 分享日记_140
-      - 分享日记_141
-      - 分享日记_142
-      - 分享日记_143
-      - 分享日记_144
-      - 分享日记_145
-      - 分享日记_146
-      - 分享日记_147
-      - 分享日记_148
-      - 分享日记_149
-      - 分享日记_150
-      - 分享日记_151
-      - 分享日记_152
-      - 分享日记_153
-      - 分享日记_154
-      - 分享日记_155
-      - 分享日记_156
-      - 分享日记_157
-      - 分享日记_158
-      - 分享日记_159
-      - 分享日记_160
-      - 分享日记_161
-      - 分享日记_162
-      - 分享日记_163
-      - 分享日记_164
-      - 分享日记_165
-      - 分享日记_166
-      - 分享日记_167
-      - 分享日记_168
-      - 分享日记_169
-      - 分享日记_170
-      - 分享日记_171
-      - 分享日记_172
-      - 分享日记_173
-      - 分享日记_174
-      - 分享日记_175
-      - 分享日记_176
-      - 分享日记_177
-      - 分享日记_178
-      - 分享日记_179
-      - 分享日记_180
-      - 分享日记_181
-      - 分享日记_182
-      - 分享日记_183
-      - 分享日记_184
-      - 分享日记_185
-      - 分享日记_186
-      - 分享日记_187
-      - 分享日记_188
-      - 分享日记_189
-      - 分享日记_190
-      - 分享日记_191
-      - 分享日记_192
-      - 分享日记_193
-      - 分享日记_194
-      - 分享日记_195
-      - 分享日记_196
-      - 分享日记_197
-      - 分享日记_198
-      - 分享日记_199
-      - 分享日记_200
-      - 分享日记_201
-      - 分享日记_202
-      - 分享日记_203
-      - 分享日记_204
-      - 分享日记_205
-      - 分享日记_206
-      - 分享日记_207
-      - 分享日记_208
-      - 分享日记_209
-      - 分享日记_210
-      - 分享日记_211
-      - 分享日记_212
-      - 分享日记_213
-      - 分享日记_214
-      - 分享日记_215
-      - 分享日记_216
-      - 分享日记_217
-      - 分享日记_218
-      - 分享日记_219
-      - 分享日记_220
-      - 分享日记_221
-      - 分享日记_222
-      - 分享日记_223
-      - 分享日记_224
-      - 分享日记_225
-      - 分享日记_226
-      - 分享日记_227
-      - 分享日记_228
-      - 分享日记_229
-
+      - 未知地区
+      - 未知地区 2
+      - 未知地区 3
+      - 未知地区 4
+      - 未知地区 5
+      - 未知地区 6
+      - 未知地区 7
+      - 未知地区 8
+      - 未知地区 9
+      - 未知地区 10
+      - 🇩🇪 德国
+      - 未知地区 11
+      - 🇩🇪 德国 2
+      - 未知地区 12
+      - 🇩🇪 德国 3
+      - 🇩🇪 德国 4
+      - 🇩🇪 德国 5
+      - 未知地区 13
+      - 🇩🇪 德国 6
+      - 🇩🇪 德国 7
+      - 🇩🇪 德国 8
+      - 🇩🇪 德国 9
+      - 未知地区 14
+      - 未知地区 15
+      - 未知地区 16
+      - 🇩🇪 德国 10
+      - 🇩🇪 德国 11
+      - 🇩🇪 德国 12
+      - 🇩🇪 德国 13
+      - 🇩🇪 德国 14
+      - 🇩🇪 德国 15
+      - 🇩🇪 德国 16
+      - 🇩🇪 德国 17
+      - 未知地区 17
+      - 未知地区 18
+      - 未知地区 19
+      - 未知地区 20
+      - 未知地区 21
+      - 未知地区 22
+      - 未知地区 23
+      - 未知地区 24
+      - 未知地区 25
+      - 未知地区 26
+      - 🇺🇸 美国
+      - 未知地区 27
+      - 未知地区 28
+      - 🇩🇪 德国 18
+      - 未知地区 29
 rules:
-# 本地/局域网地址
-# 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
-# ACL4SSR标志 如没有，代表不是用ACL4SSR规则
-# 本地/局域网地址
-# Router managed 路由器管理域名
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
+  - DOMAIN-SUFFIX,internal,🎯 全球直连
   - DOMAIN-SUFFIX,lan,🎯 全球直连
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - DOMAIN-SUFFIX,localhost,🎯 全球直连
+  - IP-CIDR,0.0.0.0/8,🎯 全球直连,no-resolve
   - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
   - IP-CIDR,100.64.0.0/10,🎯 全球直连,no-resolve
   - IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
+  - IP-CIDR,169.254.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,198.18.0.0/16,🎯 全球直连,no-resolve
@@ -2000,6 +522,7 @@ rules:
   - DOMAIN,instant.arubanetworks.com,🎯 全球直连
   - DOMAIN,setmeup.arubanetworks.com,🎯 全球直连
   - DOMAIN,router.asus.com,🎯 全球直连
+  - DOMAIN,www.asusrouter.com,🎯 全球直连
   - DOMAIN-SUFFIX,hiwifi.com,🎯 全球直连
   - DOMAIN-SUFFIX,leike.cc,🎯 全球直连
   - DOMAIN-SUFFIX,miwifi.com,🎯 全球直连
@@ -2012,23 +535,47 @@ rules:
   - DOMAIN-SUFFIX,tendawifi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zte.home,🎯 全球直连
   - DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
-# 本碎片只包含常见广告关键字、广告联盟。无副作用，放心使用
-# 广告关键词
-# 广告联盟-国内****************
-# 广告联盟-国外****************
-# 垃圾站点****************
-# 运营商广告****************
+  - DOMAIN-SUFFIX,wifi.cmcc,🎯 全球直连
+  - DOMAIN-SUFFIX,ol.epicgames.com,🎯 全球直连
+  - DOMAIN-SUFFIX,dizhensubao.getui.com,🎯 全球直连
+  - DOMAIN,dl.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,googletraveladservices.com,🎯 全球直连
+  - DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,🎯 全球直连
+  - DOMAIN,origin-a.akamaihd.net,🎯 全球直连
+  - DOMAIN,fairplay.l.qq.com,🎯 全球直连
+  - DOMAIN,livew.l.qq.com,🎯 全球直连
+  - DOMAIN,vd.l.qq.com,🎯 全球直连
+  - DOMAIN,errlog.umeng.com,🎯 全球直连
+  - DOMAIN,msg.umeng.com,🎯 全球直连
+  - DOMAIN,msg.umengcloud.com,🎯 全球直连
+  - DOMAIN,tracking.miui.com,🎯 全球直连
+  - DOMAIN,app.adjust.com,🎯 全球直连
+  - DOMAIN,bdtj.tagtic.cn,🎯 全球直连
+  - DOMAIN,rewards.hypixel.net,🎯 全球直连
+  - DOMAIN-SUFFIX,koodomobile.com,🎯 全球直连
+  - DOMAIN-SUFFIX,koodomobile.ca,🎯 全球直连
+  - DOMAIN-SUFFIX,synology.me,🎯 全球直连
+  - DOMAIN-SUFFIX,DiskStation.me,🎯 全球直连
+  - DOMAIN-SUFFIX,i234.me,🎯 全球直连
+  - DOMAIN-SUFFIX,myDS.me,🎯 全球直连
+  - DOMAIN-SUFFIX,DSCloud.biz,🎯 全球直连
+  - DOMAIN-SUFFIX,DSCloud.me,🎯 全球直连
+  - DOMAIN-SUFFIX,DSCloud.mobi,🎯 全球直连
+  - DOMAIN-SUFFIX,DSmyNAS.com,🎯 全球直连
+  - DOMAIN-SUFFIX,DSmyNAS.net,🎯 全球直连
+  - DOMAIN-SUFFIX,DSmyNAS.org,🎯 全球直连
+  - DOMAIN-SUFFIX,FamilyDS.com,🎯 全球直连
+  - DOMAIN-SUFFIX,FamilyDS.net,🎯 全球直连
+  - DOMAIN-SUFFIX,FamilyDS.org,🎯 全球直连
   - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
   - DOMAIN-KEYWORD,admaster,🛑 全球拦截
   - DOMAIN-KEYWORD,adsage,🛑 全球拦截
   - DOMAIN-KEYWORD,adsensor,🛑 全球拦截
-  - DOMAIN-KEYWORD,adservice,🛑 全球拦截
   - DOMAIN-KEYWORD,adsmogo,🛑 全球拦截
   - DOMAIN-KEYWORD,adsrvmedia,🛑 全球拦截
   - DOMAIN-KEYWORD,adsserving,🛑 全球拦截
   - DOMAIN-KEYWORD,adsystem,🛑 全球拦截
   - DOMAIN-KEYWORD,adwords,🛑 全球拦截
-  - DOMAIN-KEYWORD,analysis,🛑 全球拦截
   - DOMAIN-KEYWORD,applovin,🛑 全球拦截
   - DOMAIN-KEYWORD,appsflyer,🛑 全球拦截
   - DOMAIN-KEYWORD,domob,🛑 全球拦截
@@ -2042,7 +589,6 @@ rules:
   - DOMAIN-KEYWORD,pingfore,🛑 全球拦截
   - DOMAIN-KEYWORD,socdm,🛑 全球拦截
   - DOMAIN-KEYWORD,supersonicads,🛑 全球拦截
-  - DOMAIN-KEYWORD,usage,🛑 全球拦截
   - DOMAIN-KEYWORD,wlmonitor,🛑 全球拦截
   - DOMAIN-KEYWORD,zjtoolbar,🛑 全球拦截
   - DOMAIN-SUFFIX,09mk.cn,🛑 全球拦截
@@ -2293,7 +839,6 @@ rules:
   - DOMAIN-SUFFIX,mobclix.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mobgi.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mobisage.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,mobvista.com,🛑 全球拦截
   - DOMAIN-SUFFIX,moogos.com,🛑 全球拦截
   - DOMAIN-SUFFIX,mopub.com,🛑 全球拦截
   - DOMAIN-SUFFIX,moquanad.com,🛑 全球拦截
@@ -2303,7 +848,6 @@ rules:
   - DOMAIN-SUFFIX,mzy2014.com,🛑 全球拦截
   - DOMAIN-SUFFIX,networkbench.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ninebox.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,ntalker.com,🛑 全球拦截
   - DOMAIN-SUFFIX,nylalobghyhirgh.com,🛑 全球拦截
   - DOMAIN-SUFFIX,o2omobi.com,🛑 全球拦截
   - DOMAIN-SUFFIX,oadz.com,🛑 全球拦截
@@ -2338,10 +882,8 @@ rules:
   - DOMAIN-SUFFIX,rtbasia.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sanya1.com,🛑 全球拦截
   - DOMAIN-SUFFIX,scupio.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,serving-sys.com,🛑 全球拦截
   - DOMAIN-SUFFIX,shuiguo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,shuzilm.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,similarweb.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sitemeter.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sitescout.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sitetag.us,🛑 全球拦截
@@ -2406,6 +948,7 @@ rules:
   - DOMAIN-SUFFIX,wqmobile.com,🛑 全球拦截
   - DOMAIN-SUFFIX,wrating.com,🛑 全球拦截
   - DOMAIN-SUFFIX,wumii.cn,🛑 全球拦截
+  - DOMAIN-SUFFIX,wwads.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,xcy8.com,🛑 全球拦截
   - DOMAIN-SUFFIX,xdrig.com,🛑 全球拦截
   - DOMAIN-SUFFIX,xiaozhen.com,🛑 全球拦截
@@ -2612,66 +1155,6 @@ rules:
   - DOMAIN-SUFFIX,go.10086.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,hivedata.cc,🛑 全球拦截
   - DOMAIN-SUFFIX,navi.gd.chinamobile.com,🛑 全球拦截
-# 包含常用应用的各种去广告规则。
-# 可能有轻微副作用，可放心使用。（如果网站功能和广告冲突，会删掉去广告规则）
-# 163
-# 17173
-# 178
-# 2345
-# 360
-# 58
-# Alibaba
-# Adobe
-# Apple
-# AutoHome
-# Baidu
-# Book-app 起点 掌阅 书旗 宜搜
-# ByteDance 头条抖音
-# Dangdang
-# Duomi
-# Facebook
-# Fang
-# Google
-# JD
-# Kugou
-# Kuwo
-# Meizu flyme 魅族
-# Meitu
-# Miui 小米
-# Moji
-# Qingting.fm
-# QQ
-# RenRen
-# Sina
-# Sougou
-# Teleplus
-# Twitter
-# UC ali
-# Weifeng
-# WPS Office
-# Wi-Fi key
-# Ximalaya 喜马拉雅
-# Xunlei 迅雷app&看看
-# Yahoo
-# Zhihu
-# Ads in Video apps 下面都是 ********************
-# 6间房
-# Baofeng 暴风影音
-# Douyu
-# Fenghuang 凤凰TV
-# Funshion 风行
-# iqiyi PPS 爱奇艺
-# Ku6 酷6
-# LeTV 乐视
-# MGTV 芒果TV
-# Sohu 搜狐
-# PPTV、PPLive
-# QQ Live
-# Youku & Tudou
-# Youtube
-# Others ads in Video apps
-# Ads in Video apps end 上面都是 ********************
-# 常用网站广告
   - DOMAIN-SUFFIX,a.youdao.com,🍃 应用净化
   - DOMAIN-SUFFIX,adgeo.corp.163.com,🍃 应用净化
   - DOMAIN-SUFFIX,analytics.126.net,🍃 应用净化
@@ -2836,7 +1319,6 @@ rules:
   - DOMAIN-SUFFIX,baidu9635.com,🍃 应用净化
   - DOMAIN-SUFFIX,baidustatic.com,🍃 应用净化
   - DOMAIN-SUFFIX,baidutv.baidu.com,🍃 应用净化
-  - DOMAIN-SUFFIX,baikebcs.bdimg.com,🍃 应用净化
   - DOMAIN-SUFFIX,banlv.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,bar.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,bdplus.baidu.com,🍃 应用净化
@@ -3193,8 +1675,6 @@ rules:
   - DOMAIN-SUFFIX,shenghuo.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,stat.pandora.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,union.mi.com,🍃 应用净化
-  - DOMAIN-SUFFIX,wtradv.market.xiaomi.com,🍃 应用净化
-  - DOMAIN-SUFFIX,xmpush.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,ad.api.moji.com,🍃 应用净化
   - DOMAIN-SUFFIX,app.moji001.com,🍃 应用净化
   - DOMAIN-SUFFIX,cdn.moji002.com,🍃 应用净化
@@ -3255,9 +1735,7 @@ rules:
   - DOMAIN-SUFFIX,log.mix.sina.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,mobileads.dx.cn,🍃 应用净化
   - DOMAIN-SUFFIX,newspush.sinajs.cn,🍃 应用净化
-  - DOMAIN-SUFFIX,pay.mobile.sina.cn,🍃 应用净化
   - DOMAIN-SUFFIX,sax.mobile.sina.cn,🍃 应用净化
-  - DOMAIN-SUFFIX,sax.sina.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,saxd.sina.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,sdkapp.mobile.sina.cn,🍃 应用净化
   - DOMAIN-SUFFIX,sdkapp.uve.weibo.com,🍃 应用净化
@@ -3389,7 +1867,6 @@ rules:
   - DOMAIN-SUFFIX,ws.progrss.yahoo.com,🍃 应用净化
   - DOMAIN-SUFFIX,yads.yahoo.co.jp,🍃 应用净化
   - DOMAIN-SUFFIX,ybp.yahoo.com,🍃 应用净化
-  - DOMAIN-SUFFIX,zhihu-web-analytics.zhihu.com,🍃 应用净化
   - DOMAIN-SUFFIX,shrek.6.cn,🍃 应用净化
   - DOMAIN-SUFFIX,simba.6.cn,🍃 应用净化
   - DOMAIN-SUFFIX,union.6.cn,🍃 应用净化
@@ -3659,7 +2136,6 @@ rules:
   - DOMAIN-SUFFIX,dol.tianyaui.cn,🍃 应用净化
   - DOMAIN-SUFFIX,dw.xcar.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,e.nexac.com,🍃 应用净化
-  - DOMAIN-SUFFIX,eq.10jqka.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,exp.17wo.cn,🍃 应用净化
   - DOMAIN-SUFFIX,game.51yund.com,🍃 应用净化
   - DOMAIN-SUFFIX,ganjituiguang.ganji.com,🍃 应用净化
@@ -3676,7 +2152,6 @@ rules:
   - DOMAIN-SUFFIX,mobileads.msn.com,🍃 应用净化
   - DOMAIN-SUFFIX,n.cosbot.cn,🍃 应用净化
   - DOMAIN-SUFFIX,newton-api.ele.me,🍃 应用净化
-  - DOMAIN-SUFFIX,ozone.10jqka.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,pdl.gionee.com,🍃 应用净化
   - DOMAIN-SUFFIX,pica-juicy.picacomic.com,🍃 应用净化
   - DOMAIN-SUFFIX,pixel.wp.com,🍃 应用净化
@@ -3689,7 +2164,6 @@ rules:
   - DOMAIN-SUFFIX,res.gwifi.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,ssp.kssws.ks-cdn.com,🍃 应用净化
   - DOMAIN-SUFFIX,sta.ganji.com,🍃 应用净化
-  - DOMAIN-SUFFIX,stat.10jqka.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,stat.it168.com,🍃 应用净化
   - DOMAIN-SUFFIX,stats.chinaz.com,🍃 应用净化
   - DOMAIN-SUFFIX,stats.developingperspective.com,🍃 应用净化
@@ -3697,9 +2171,41 @@ rules:
   - DOMAIN-SUFFIX,tracker.yhd.com,🍃 应用净化
   - DOMAIN-SUFFIX,tralog.ganji.com,🍃 应用净化
   - DOMAIN-SUFFIX,up.qingdaonews.com,🍃 应用净化
-  - DOMAIN-SUFFIX,vaserviece.10jqka.com.cn,🍃 应用净化
-# Google China
-#DOMAIN-SUFFIX,translate.googleapis.com
+  - DOMAIN,alt1-mtalk.google.com,📢 谷歌FCM
+  - DOMAIN,alt2-mtalk.google.com,📢 谷歌FCM
+  - DOMAIN,alt3-mtalk.google.com,📢 谷歌FCM
+  - DOMAIN,alt4-mtalk.google.com,📢 谷歌FCM
+  - DOMAIN,alt5-mtalk.google.com,📢 谷歌FCM
+  - DOMAIN,alt6-mtalk.google.com,📢 谷歌FCM
+  - DOMAIN,alt7-mtalk.google.com,📢 谷歌FCM
+  - DOMAIN,alt8-mtalk.google.com,📢 谷歌FCM
+  - DOMAIN,mtalk.google.com,📢 谷歌FCM
+  - IP-CIDR,64.233.177.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,64.233.186.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,64.233.187.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,64.233.188.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,64.233.189.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,74.125.23.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,74.125.24.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,74.125.28.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,74.125.127.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,74.125.137.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,74.125.203.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,74.125.204.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,74.125.206.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,108.177.125.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,142.250.4.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,142.250.10.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,142.250.31.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,142.250.96.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,172.217.194.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,172.217.218.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,172.217.219.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,172.253.63.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,172.253.122.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,173.194.175.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,173.194.218.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,209.85.233.188/32,📢 谷歌FCM,no-resolve
   - DOMAIN-SUFFIX,265.com,🎯 全球直连
   - DOMAIN-SUFFIX,2mdn.net,🎯 全球直连
   - DOMAIN-SUFFIX,alt1-mtalk.google.com,🎯 全球直连
@@ -3711,34 +2217,24 @@ rules:
   - DOMAIN-SUFFIX,alt7-mtalk.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,alt8-mtalk.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,app-measurement.com,🎯 全球直连
-  - DOMAIN-SUFFIX,c.android.clients.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,cache.pack.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,clickserve.dartsearch.net,🎯 全球直连
-  - DOMAIN-SUFFIX,clientservices.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,crl.pki.goog,🎯 全球直连
   - DOMAIN-SUFFIX,dl.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,dl.l.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,fonts.googleapis.com,🎯 全球直连
-  - DOMAIN-SUFFIX,fonts.gstatic.com,🎯 全球直连
   - DOMAIN-SUFFIX,googletagmanager.com,🎯 全球直连
   - DOMAIN-SUFFIX,googletagservices.com,🎯 全球直连
   - DOMAIN-SUFFIX,gtm.oasisfeng.com,🎯 全球直连
-  - DOMAIN-SUFFIX,imasdk.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,mtalk.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,ocsp.pki.goog,🎯 全球直连
   - DOMAIN-SUFFIX,recaptcha.net,🎯 全球直连
   - DOMAIN-SUFFIX,safebrowsing-cache.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,safebrowsing.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,settings.crashlytics.com,🎯 全球直连
   - DOMAIN-SUFFIX,ssl-google-analytics.l.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,toolbarqueries.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,tools.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,tools.l.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,update.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🎯 全球直连
-  - DOMAIN-SUFFIX,www.gstatic.com,🎯 全球直连
-# 内容：SteamCN
-# 数量：15条
   - DOMAIN,csgo.wmsj.cn,🎯 全球直连
   - DOMAIN,dl.steam.clngaa.com,🎯 全球直连
   - DOMAIN,dl.steam.ksyna.com,🎯 全球直连
@@ -3750,13 +2246,11 @@ rules:
   - DOMAIN,steampowered.com.8686c.com,🎯 全球直连
   - DOMAIN,steamstatic.com.8686c.com,🎯 全球直连
   - DOMAIN,wmsjsteam.com,🎯 全球直连
+  - DOMAIN,xz.pphimalayanrt.com,🎯 全球直连
   - DOMAIN-SUFFIX,cm.steampowered.com,🎯 全球直连
   - DOMAIN-SUFFIX,steamchina.com,🎯 全球直连
   - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
   - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
-# Microsoft Services
-# optimized from https://gist.github.com/TTTPOB/ce93fb3b04ba2f21880b09427442d831
-# source: https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges
   - DOMAIN-KEYWORD,1drv,Ⓜ️ 微软服务
   - DOMAIN-KEYWORD,microsoft,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,aadrm.com,Ⓜ️ 微软服务
@@ -3769,8 +2263,11 @@ rules:
   - DOMAIN-SUFFIX,azure.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,azure.net,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,azureedge.net,Ⓜ️ 微软服务
+  - DOMAIN-SUFFIX,azureiotcentral.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,azurerms.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,bing.com,Ⓜ️ 微软服务
+  - DOMAIN-SUFFIX,bing.net,Ⓜ️ 微软服务
+  - DOMAIN-SUFFIX,bingapis.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,cloudapp.net,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,cloudappsecurity.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,edgesuite.net,Ⓜ️ 微软服务
@@ -3833,12 +2330,11 @@ rules:
   - DOMAIN-SUFFIX,wunderlist.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,yammer.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,yammerusercontent.com,Ⓜ️ 微软服务
-# Apple
-# 一般国内Apple肯定正常,不需要开代理
   - DOMAIN,apple.comscoreresearch.com,🍎 苹果服务
   - DOMAIN-SUFFIX,aaplimg.com,🍎 苹果服务
   - DOMAIN-SUFFIX,akadns.net,🍎 苹果服务
   - DOMAIN-SUFFIX,apple-cloudkit.com,🍎 苹果服务
+  - DOMAIN-SUFFIX,apple-dns.net,🍎 苹果服务
   - DOMAIN-SUFFIX,apple-mapkit.com,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.co,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.com,🍎 苹果服务
@@ -3863,64 +2359,73 @@ rules:
   - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
   - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
   - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
-# 内容：国外媒体列表
-# 更新：2023-01-15 22:06:33
-# 数量：330条
-# ABC
-# AbemaTV
-# All4
-# Amazon
-# AppleNews
-# AppleTV
-# BBCiPlayer
-# Bahamut
-# DAZN
-# Deezer
-# DiscoveryPlus
-# DisneyPlus
-# EncoreTVB
-# FoxNow
-# HBO
-# HBO_GO_HKG
-# HWTV
-# Hulu
-# HuluJapan
-# ITV
-# JOOX
-# Japonx
-# KKBOX
-# KKTV
-# LiTV
-# LineTV
-# My5
-# MyTVSuper
-# Netflix
-# Niconico
-# PBS
-# Pandora
-# Pornhub
-# Qobuz
-# SoundCloud
-# Spotify
-# TIDAL
-# TaiWanGood 台湾好
-# TikTok
-# Twitch
-# ViuTV
-# YouTube
-# YouTubeMusic
+  - DOMAIN-SUFFIX,t.me,📲 电报信息
+  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
+  - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
+  - DOMAIN-SUFFIX,telegram.me,📲 电报信息
+  - DOMAIN-SUFFIX,telegram.org,📲 电报信息
+  - DOMAIN-SUFFIX,telesco.pe,📲 电报信息
+  - IP-CIDR,91.108.0.0/16,📲 电报信息,no-resolve
+  - IP-CIDR,95.161.64.0/20,📲 电报信息,no-resolve
+  - IP-CIDR,109.239.140.0/24,📲 电报信息,no-resolve
+  - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
   - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,go.com,🌍 国外媒体
-#   - USER-AGENT,AbemaTV*,🌍 国外媒体
+  - DOMAIN-KEYWORD,anthropic,🌍 国外媒体
+  - DOMAIN-KEYWORD,claude,🌍 国外媒体
+  - DOMAIN-KEYWORD,openai,🌍 国外媒体
+  - DOMAIN,ai.google.dev,🌍 国外媒体
+  - DOMAIN,aistudio.google.com,🌍 国外媒体
+  - DOMAIN,api.githubcopilot.com,🌍 国外媒体
+  - DOMAIN,api.groq.com,🌍 国外媒体
+  - DOMAIN,api.together.xyz,🌍 国外媒体
+  - DOMAIN,bard.google.com,🌍 国外媒体
+  - DOMAIN,console.groq.com,🌍 国外媒体
+  - DOMAIN,copilot-proxy.githubusercontent.com,🌍 国外媒体
+  - DOMAIN,gemini.google.com,🌍 国外媒体
+  - DOMAIN,generativelanguage.googleapis.com,🌍 国外媒体
+  - DOMAIN,notebooklm.google.com,🌍 国外媒体
+  - DOMAIN,sydney.bing.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,ai.azure.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,anthropic.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,auth0.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,bard.google.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,chatgpt.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,claude.ai,🌍 国外媒体
+  - DOMAIN-SUFFIX,claude.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,claudeusercontent.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,copilot.cloud.microsoft,🌍 国外媒体
+  - DOMAIN-SUFFIX,copilot.microsoft.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,cursor.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,cursor.sh,🌍 国外媒体
+  - DOMAIN-SUFFIX,events.statsigapi.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,featuregates.org,🌍 国外媒体
+  - DOMAIN-SUFFIX,gemini.google.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,grazie.ai,🌍 国外媒体
+  - DOMAIN-SUFFIX,grazie.aws.intellij.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,identrust.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
+  - DOMAIN-SUFFIX,intercomcdn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,jetbrains.ai,🌍 国外媒体
+  - DOMAIN-SUFFIX,makersuite.google.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,meta.ai,🌍 国外媒体
+  - DOMAIN-SUFFIX,mistral.ai,🌍 国外媒体
+  - DOMAIN-SUFFIX,oaistatic.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,oaiusercontent.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,openai.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,perplexity.ai,🌍 国外媒体
+  - DOMAIN-SUFFIX,sora.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,x.ai,🌍 国外媒体
   - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
-  - DOMAIN,api-abematv.bucketeer.jp,🌍 国外媒体
-  - DOMAIN-SUFFIX,abema-tv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,abema.io,🌍 国外媒体
   - DOMAIN-SUFFIX,abema.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,ameba.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,hayabusa.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,hayabusa.media,🌍 国外媒体
-#   - USER-AGENT,All4*,🌍 国外媒体
   - DOMAIN-SUFFIX,c4assets.com,🌍 国外媒体
   - DOMAIN-SUFFIX,channel4.com,🌍 国外媒体
   - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
@@ -3938,18 +2443,17 @@ rules:
   - DOMAIN-SUFFIX,aiv-cdn.net,🌍 国外媒体
   - DOMAIN-SUFFIX,aiv-delivery.net,🌍 国外媒体
   - DOMAIN-SUFFIX,amazon.jobs,🌍 国外媒体
+  - DOMAIN-SUFFIX,amazontools.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,amazontours.com,🌍 国外媒体
   - DOMAIN-SUFFIX,amazonuniversity.jobs,🌍 国外媒体
   - DOMAIN-SUFFIX,amazonvideo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,media-amazon.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pv-cdn.net,🌍 国外媒体
-#   - URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/,🌍 国外媒体
-#   - USER-AGENT,AppleNews*,🌍 国外媒体
-#   - USER-AGENT,com.apple.news*,🌍 国外媒体
+  - DOMAIN-SUFFIX,seattlespheres.com,🌍 国外媒体
   - DOMAIN,gspe1-ssl.ls.apple.com,🌍 国外媒体
   - DOMAIN,np-edge.itunes.apple.com,🌍 国外媒体
   - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tv.apple.com,🌍 国外媒体
-#   - USER-AGENT,BBCiPlayer*,🌍 国外媒体
   - DOMAIN-KEYWORD,bbcfmt,🌍 国外媒体
   - DOMAIN-KEYWORD,uk-live,🌍 国外媒体
   - DOMAIN,aod-dash-uk-live.akamaized.net,🌍 国外媒体
@@ -3964,13 +2468,11 @@ rules:
   - DOMAIN-SUFFIX,bbci.co,🌍 国外媒体
   - DOMAIN-SUFFIX,bbci.co.uk,🌍 国外媒体
   - DOMAIN-SUFFIX,bidi.net.uk,🌍 国外媒体
-#   - USER-AGENT,Anime*,🌍 国外媒体
   - DOMAIN,bahamut.akamaized.net,🌍 国外媒体
   - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN,gamer2-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
-#   - USER-AGENT,DAZN*,🌍 国外媒体
   - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
   - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
@@ -3982,14 +2484,11 @@ rules:
   - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,indaznlab.com,🌍 国外媒体
   - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
-#   - USER-AGENT,Deezer*,🌍 国外媒体
   - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
   - DOMAIN-SUFFIX,disco-api.com,🌍 国外媒体
   - DOMAIN-SUFFIX,discovery.com,🌍 国外媒体
   - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
-#   - USER-AGENT,Disney*,🌍 国外媒体
-#   - USER-AGENT,Disney+*,🌍 国外媒体
   - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
   - DOMAIN-SUFFIX,adobedtm.com,🌍 国外媒体
   - DOMAIN-SUFFIX,bam.nr-data.net,🌍 国外媒体
@@ -4010,25 +2509,19 @@ rules:
   - DOMAIN-SUFFIX,dssott.com,🌍 国外媒体
   - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,js-agent.newrelic.com,🌍 国外媒体
-#   - USER-AGENT,encoreTVB*,🌍 国外媒体
   - DOMAIN,bcbolt446c5271-a.akamaihd.net,🌍 国外媒体
   - DOMAIN,content.jwplatform.com,🌍 国外媒体
   - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
   - DOMAIN,videos-f.jwpsrv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,encoretvb.com,🌍 国外媒体
-#   - USER-AGENT,FOX%20NOW*,🌍 国外媒体
   - DOMAIN-SUFFIX,fox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,foxdcg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
-#   - USER-AGENT,HBO%20NOW*,🌍 国外媒体
-#   - USER-AGENT,HBOMAX*,🌍 国外媒体
   - DOMAIN-SUFFIX,hbo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomax.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomaxcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
-#   - USER-AGENT,HBO%20GO%20PROD*,🌍 国外媒体
-  - DOMAIN-KEYWORD,.hbogoasia.,🌍 国外媒体
   - DOMAIN-KEYWORD,hbogoasia,🌍 国外媒体
   - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
   - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
@@ -4048,7 +2541,6 @@ rules:
   - DOMAIN-SUFFIX,hboasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
-#   - USER-AGENT,HWTVMobile*,🌍 国外媒体
   - DOMAIN-SUFFIX,5itv.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,ocnttv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,cws-hulu.conviva.com,🌍 国外媒体
@@ -4064,12 +2556,10 @@ rules:
   - DOMAIN-SUFFIX,prod.hjholdings.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,streaks.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,yb.uncn.jp,🌍 国外媒体
-#   - USER-AGENT,ITV_Player*,🌍 国外媒体
   - DOMAIN,itvpnpmobile-a.akamaihd.net,🌍 国外媒体
   - DOMAIN-SUFFIX,itv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,itvstatic.com,🌍 国外媒体
-#   - USER-AGENT,JOOX*,🌍 国外媒体
-#   - USER-AGENT,WeMusic*,🌍 国外媒体
+  - DOMAIN-SUFFIX,iwara.tv,🌍 国外媒体
   - DOMAIN-KEYWORD,jooxweb-api,🌍 国外媒体
   - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
   - DOMAIN-KEYWORD,japonx,🌍 国外媒体
@@ -4085,32 +2575,25 @@ rules:
   - DOMAIN-SUFFIX,kfs.io,🌍 国外媒体
   - DOMAIN-SUFFIX,kkbox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,kkbox.com.tw,🌍 国外媒体
-#   - USER-AGENT,KKTV*,🌍 国外媒体
-#   - USER-AGENT,com.kktv.ios.kktv*,🌍 国外媒体
   - DOMAIN,kktv-theater.kk.stream,🌍 国外媒体
   - DOMAIN,theater-kktv.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.me,🌍 国外媒体
   - DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,litv.tv,🌍 国外媒体
-#   - USER-AGENT,LINE%20TV*,🌍 国外媒体
-#   - USER-AGENT,LINE*,🌍 国外媒体
   - DOMAIN,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,linetv.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,profile.line-scdn.net,🌍 国外媒体
-#   - USER-AGENT,My5*,🌍 国外媒体
   - DOMAIN,d349g9zuie06uo.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,channel5.com,🌍 国外媒体
   - DOMAIN-SUFFIX,my5.tv,🌍 国外媒体
-#   - USER-AGENT,mytv*,🌍 国外媒体
   - DOMAIN-KEYWORD,nowtv100,🌍 国外媒体
   - DOMAIN-KEYWORD,rthklive,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.hb.omtrdc.net,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.sc.omtrdc.net,🌍 国外媒体
   - DOMAIN-SUFFIX,mytvsuper.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tvb.com,🌍 国外媒体
-#   - USER-AGENT,Argo*,🌍 国外媒体
   - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🌍 国外媒体
   - DOMAIN-KEYWORD,dualstack.apiproxy-,🌍 国外媒体
   - DOMAIN-KEYWORD,netflixdnstest,🌍 国外媒体
@@ -4148,27 +2631,59 @@ rules:
   - IP-CIDR,192.173.64.0/18,🌍 国外媒体,no-resolve
   - IP-CIDR,198.38.96.0/19,🌍 国外媒体,no-resolve
   - IP-CIDR,198.45.48.0/20,🌍 国外媒体,no-resolve
+  - IP-CIDR,203.75.84.0/24,🌍 国外媒体,no-resolve
   - IP-CIDR,207.45.72.0/22,🌍 国外媒体,no-resolve
   - IP-CIDR,208.75.76.0/22,🌍 国外媒体,no-resolve
-#   - USER-AGENT,Niconico*,🌍 国外媒体
   - DOMAIN-SUFFIX,dmc.nico,🌍 国外媒体
   - DOMAIN-SUFFIX,nicovideo.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,nimg.jp,🌍 国外媒体
-#   - USER-AGENT,PBS*,🌍 国外媒体
+  - DOMAIN-KEYWORD,nivod,🌍 国外媒体
+  - DOMAIN-SUFFIX,biggggg.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,mudvod.tv,🌍 国外媒体
+  - DOMAIN-SUFFIX,nbys.tv,🌍 国外媒体
+  - DOMAIN-SUFFIX,nbys1.tv,🌍 国外媒体
+  - DOMAIN-SUFFIX,nbyy.tv,🌍 国外媒体
+  - DOMAIN-SUFFIX,newpppp.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,nivod.tv,🌍 国外媒体
+  - DOMAIN-SUFFIX,nivodi.tv,🌍 国外媒体
+  - DOMAIN-SUFFIX,nivodz.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,vod360.net,🌍 国外媒体
+  - DOMAIN-KEYWORD,olevod,🌍 国外媒体
+  - DOMAIN-SUFFIX,haiwaikan.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,iole.tv,🌍 国外媒体
+  - DOMAIN-SUFFIX,olehd.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,olelive.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,olevod.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,olevod.io,🌍 国外媒体
+  - DOMAIN-SUFFIX,olevod.tv,🌍 国外媒体
+  - DOMAIN-SUFFIX,olevodtv.com,🌍 国外媒体
+  - DOMAIN-KEYWORD,openai,🌍 国外媒体
+  - DOMAIN-SUFFIX,auth0.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,challenges.cloudflare.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,chatgpt.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,events.statsigapi.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,featuregates.org,🌍 国外媒体
+  - DOMAIN-SUFFIX,identrust.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
+  - DOMAIN-SUFFIX,intercomcdn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,oaistatic.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,oaiusercontent.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,openai.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🌍 国外媒体
+  - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
+  - DOMAIN-SUFFIX,stripe.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pbs.org,🌍 国外媒体
-#   - USER-AGENT,Pandora*,🌍 国外媒体
   - DOMAIN-SUFFIX,pandora.com,🌍 国外媒体
   - DOMAIN-SUFFIX,phncdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,phprcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pornhub.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pornhubpremium.com,🌍 国外媒体
   - DOMAIN-SUFFIX,qobuz.com,🌍 国外媒体
-#   - USER-AGENT,SoundCloud*,🌍 国外媒体
   - DOMAIN-SUFFIX,p-cdn.us,🌍 国外媒体
   - DOMAIN-SUFFIX,sndcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,soundcloud.com,🌍 国外媒体
-#   - USER-AGENT,Spotify*,🌍 国外媒体
-  - DOMAIN-KEYWORD,-spotify-com,🌍 国外媒体
+  - DOMAIN-KEYWORD,-spotify-,🌍 国外媒体
   - DOMAIN-KEYWORD,spotify.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pscdn.co,🌍 国外媒体
   - DOMAIN-SUFFIX,scdn.co,🌍 国外媒体
@@ -4176,15 +2691,12 @@ rules:
   - DOMAIN-SUFFIX,spotify.com,🌍 国外媒体
   - DOMAIN-SUFFIX,spotifycdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,spotifycdn.net,🌍 国外媒体
-#   - USER-AGENT,TIDAL*,🌍 国外媒体
   - DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tidal.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tidalhifi.com,🌍 国外媒体
-#   - USER-AGENT,TaiwanGood*,🌍 国外媒体
   - DOMAIN,hamifans.emome.net,🌍 国外媒体
   - DOMAIN-SUFFIX,skyking.com.tw,🌍 国外媒体
-#   - USER-AGENT,TikTok*,🌍 国外媒体
-  - DOMAIN-KEYWORD,tiktokcdn-,🌍 国外媒体
+  - DOMAIN-KEYWORD,tiktokcdn,🌍 国外媒体
   - DOMAIN-SUFFIX,byteoversea.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ibytedtos.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ipstatp.com,🌍 国外媒体
@@ -4201,7 +2713,6 @@ rules:
   - DOMAIN-SUFFIX,twitch-ext.rootonline.de,🌍 国外媒体
   - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
-#   - USER-AGENT,Viu*,🌍 国外媒体
   - PROCESS-NAME,com.viu.pad,🌍 国外媒体
   - PROCESS-NAME,com.viu.phone,🌍 国外媒体
   - PROCESS-NAME,com.vuclip.viu,🌍 国外媒体
@@ -4217,9 +2728,6 @@ rules:
   - DOMAIN-SUFFIX,viu.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.now.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.tv,🌍 国外媒体
-#   - USER-AGENT,*youtube*,🌍 国外媒体
-#   - USER-AGENT,YouTube*,🌍 国外媒体
-#   - USER-AGENT,com.google.ios.youtube*,🌍 国外媒体
   - DOMAIN-KEYWORD,youtube,🌍 国外媒体
   - DOMAIN,youtubei.googleapis.com,🌍 国外媒体
   - DOMAIN,yt3.ggpht.com,🌍 国外媒体
@@ -4234,68 +2742,11 @@ rules:
   - DOMAIN-SUFFIX,youtubekids.com,🌍 国外媒体
   - DOMAIN-SUFFIX,yt.be,🌍 国外媒体
   - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
-#   - USER-AGENT,*YouTubeMusic*,🌍 国外媒体
-#   - USER-AGENT,*com.google.ios.youtubemusic*,🌍 国外媒体
-#   - USER-AGENT,YouTubeMusic*,🌍 国外媒体
-#   - USER-AGENT,com.google.ios.youtubemusic*,🌍 国外媒体
   - DOMAIN,music.youtube.com,🌍 国外媒体
-# Telegram
-#PROCESS-NAME,Telegram.exe
-#PROCESS-NAME,org.telegram.messenger
-  - DOMAIN-SUFFIX,t.me,📲 电报信息
-  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
-  - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
-  - DOMAIN-SUFFIX,telegram.me,📲 电报信息
-  - DOMAIN-SUFFIX,telegram.org,📲 电报信息
-  - DOMAIN-SUFFIX,telesco.pe,📲 电报信息
-  - IP-CIDR,91.108.0.0/16,📲 电报信息,no-resolve
-  - IP-CIDR,109.239.140.0/24,📲 电报信息,no-resolve
-  - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
-  - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
-  - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
-  - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
-# 长风网站，自动注入
-  - DOMAIN-SUFFIX,v2rayse.com,🚀 节点选择
-  - DOMAIN-SUFFIX,cff.pw,🚀 节点选择
-  - DOMAIN-SUFFIX,vpnse.org,🚀 节点选择
-  - DOMAIN-SUFFIX,cfmem.com,🚀 节点选择
-# 代理列表
-# MyList && Other
-# 国外域名
-# 国外域名关键字
-# Top Blocked Sites
-# Amazon
-# BBC
-# Developer 开发者常用国外网站、镜像和论坛
-# Discord
-# Facebook
-# Github
-# Google
-# GoogleCNProxyIP 谷歌中国服务 services.googleapis.cn
-# Instagram
-# Kakao Talk
-# Line
-# OneDrive
-#DOMAIN-SUFFIX,aria.microsoft.com
-# Porn
-# Pixiv
-# Spark
-# Steam
-# TapTap
-# Twitch
-# Twitter
-# Telegram
-# TeraBox
-# Whatsapp
-# Wikipedia 维基相关域名
-#飞流直播
-#华文电视
-# VikACG
   - DOMAIN-SUFFIX,1password.com,🚀 节点选择
   - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
   - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
   - DOMAIN-SUFFIX,btlibrary.me,🚀 节点选择
-  - DOMAIN-SUFFIX,chat.openai.com,🚀 节点选择
   - DOMAIN-SUFFIX,cloudcone.com,🚀 节点选择
   - DOMAIN-SUFFIX,dubox.com,🚀 节点选择
   - DOMAIN-SUFFIX,gameloft.com,🚀 节点选择
@@ -4306,13 +2757,13 @@ rules:
   - DOMAIN-SUFFIX,linkedin.com,🚀 节点选择
   - DOMAIN-SUFFIX,myteamspeak.com,🚀 节点选择
   - DOMAIN-SUFFIX,notion.so,🚀 节点选择
-  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
   - DOMAIN-SUFFIX,ping.pe,🚀 节点选择
   - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
   - DOMAIN-SUFFIX,teddysun.com,🚀 节点选择
   - DOMAIN-SUFFIX,tumbex.com,🚀 节点选择
   - DOMAIN-SUFFIX,twdvd.com,🚀 节点选择
   - DOMAIN-SUFFIX,unsplash.com,🚀 节点选择
+  - DOMAIN-SUFFIX,buzzsprout.com,🚀 节点选择
   - DOMAIN-SUFFIX,eu,🚀 节点选择
   - DOMAIN-SUFFIX,hk,🚀 节点选择
   - DOMAIN-SUFFIX,jp,🚀 节点选择
@@ -4320,7 +2771,6 @@ rules:
   - DOMAIN-SUFFIX,sg,🚀 节点选择
   - DOMAIN-SUFFIX,tw,🚀 节点选择
   - DOMAIN-SUFFIX,uk,🚀 节点选择
-  - DOMAIN-SUFFIX,us,🚀 节点选择
   - DOMAIN-KEYWORD,1e100,🚀 节点选择
   - DOMAIN-KEYWORD,abema,🚀 节点选择
   - DOMAIN-KEYWORD,appledaily,🚀 节点选择
@@ -4471,8 +2921,11 @@ rules:
   - DOMAIN-KEYWORD,uk-live,🚀 节点选择
   - DOMAIN-SUFFIX,bbc.co,🚀 节点选择
   - DOMAIN-SUFFIX,bbc.com,🚀 节点选择
+  - DOMAIN-SUFFIX,claude.ai,🚀 节点选择
+  - DOMAIN-SUFFIX,anthropic.com,🚀 节点选择
   - DOMAIN-SUFFIX,apache.org,🚀 节点选择
   - DOMAIN-SUFFIX,docker.com,🚀 节点选择
+  - DOMAIN-SUFFIX,docker.io,🚀 节点选择
   - DOMAIN-SUFFIX,elastic.co,🚀 节点选择
   - DOMAIN-SUFFIX,elastic.com,🚀 节点选择
   - DOMAIN-SUFFIX,gcr.io,🚀 节点选择
@@ -4490,6 +2943,13 @@ rules:
   - DOMAIN-SUFFIX,spring.io,🚀 节点选择
   - DOMAIN-SUFFIX,spring.net,🚀 节点选择
   - DOMAIN-SUFFIX,stackoverflow.com,🚀 节点选择
+  - DOMAIN,d1q6f0aelx0por.cloudfront.net,🚀 节点选择
+  - DOMAIN,d2wy8f7a9ursnm.cloudfront.net,🚀 节点选择
+  - DOMAIN,d36jcksde1wxzq.cloudfront.net,🚀 节点选择
+  - DOMAIN-SUFFIX,compose-spec.io,🚀 节点选择
+  - DOMAIN-SUFFIX,docker.com,🚀 节点选择
+  - DOMAIN-SUFFIX,docker.io,🚀 节点选择
+  - DOMAIN-SUFFIX,dockerhub.com,🚀 节点选择
   - DOMAIN-SUFFIX,discord.co,🚀 节点选择
   - DOMAIN-SUFFIX,discord.com,🚀 节点选择
   - DOMAIN-SUFFIX,discord.gg,🚀 节点选择
@@ -4523,6 +2983,7 @@ rules:
   - DOMAIN-SUFFIX,1e100.net,🚀 节点选择
   - DOMAIN-SUFFIX,2mdn.net,🚀 节点选择
   - DOMAIN-SUFFIX,app-measurement.net,🚀 节点选择
+  - DOMAIN-SUFFIX,c.gle,🚀 节点选择
   - DOMAIN-SUFFIX,g.co,🚀 节点选择
   - DOMAIN-SUFFIX,ggpht.com,🚀 节点选择
   - DOMAIN-SUFFIX,goo.gl,🚀 节点选择
@@ -4563,6 +3024,7 @@ rules:
   - DOMAIN-SUFFIX,cdninstagram.com,🚀 节点选择
   - DOMAIN-SUFFIX,instagram.com,🚀 节点选择
   - DOMAIN-SUFFIX,instagr.am,🚀 节点选择
+  - DOMAIN-SUFFIX,iwara.tv,🚀 节点选择
   - DOMAIN-SUFFIX,kakao.com,🚀 节点选择
   - DOMAIN-SUFFIX,kakao.co.kr,🚀 节点选择
   - DOMAIN-SUFFIX,kakaocdn.net,🚀 节点选择
@@ -4587,6 +3049,8 @@ rules:
   - IP-CIDR,119.235.236.0/23,🚀 节点选择,no-resolve
   - IP-CIDR,147.92.128.0/17,🚀 节点选择,no-resolve
   - IP-CIDR,203.104.128.0/19,🚀 节点选择,no-resolve
+  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
+  - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
   - DOMAIN-KEYWORD,1drv,🚀 节点选择
   - DOMAIN-KEYWORD,onedrive,🚀 节点选择
   - DOMAIN-KEYWORD,skydrive,🚀 节点选择
@@ -4599,6 +3063,7 @@ rules:
   - DOMAIN-SUFFIX,spoprod-a.akamaihd.net,🚀 节点选择
   - DOMAIN-SUFFIX,storage.live.com,🚀 节点选择
   - DOMAIN-SUFFIX,storage.msn.com,🚀 节点选择
+  - DOMAIN-SUFFIX,microsoftpersonalcontent.com,🚀 节点选择
   - DOMAIN-KEYWORD,porn,🚀 节点选择
   - DOMAIN-SUFFIX,8teenxxx.com,🚀 节点选择
   - DOMAIN-SUFFIX,ahcdn.com,🚀 节点选择
@@ -4624,6 +3089,7 @@ rules:
   - DOMAIN-SUFFIX,ypncdn.com,🚀 节点选择
   - DOMAIN-SUFFIX,pixiv.net,🚀 节点选择
   - DOMAIN-SUFFIX,pximg.net,🚀 节点选择
+  - DOMAIN-SUFFIX,fanbox.cc,🚀 节点选择
   - DOMAIN-SUFFIX,amplitude.com,🚀 节点选择
   - DOMAIN-SUFFIX,firebaseio.com,🚀 节点选择
   - DOMAIN-SUFFIX,hockeyapp.net,🚀 节点选择
@@ -4642,7 +3108,6 @@ rules:
   - DOMAIN-SUFFIX,steamstatic.com,🚀 节点选择
   - DOMAIN-SUFFIX,steamstat.us,🚀 节点选择
   - DOMAIN,steambroadcast.akamaized.net,🚀 节点选择
-  - DOMAIN,steamcdn-a.akamaihd.net,🚀 节点选择
   - DOMAIN,steamcommunity-a.akamaihd.net,🚀 节点选择
   - DOMAIN,steamstore-a.akamaihd.net,🚀 节点选择
   - DOMAIN,steamusercontent-a.akamaihd.net,🚀 节点选择
@@ -4658,6 +3123,7 @@ rules:
   - DOMAIN-SUFFIX,twimg.co,🚀 节点选择
   - DOMAIN-SUFFIX,twimg.com,🚀 节点选择
   - DOMAIN-SUFFIX,twimg.org,🚀 节点选择
+  - DOMAIN-SUFFIX,x.com,🚀 节点选择
   - DOMAIN-SUFFIX,t.me,🚀 节点选择
   - DOMAIN-SUFFIX,tdesktop.com,🚀 节点选择
   - DOMAIN-SUFFIX,telegra.ph,🚀 节点选择
@@ -4699,59 +3165,14 @@ rules:
   - DOMAIN-SUFFIX,wikiversity.org,🚀 节点选择
   - DOMAIN-SUFFIX,wikivoyage.org,🚀 节点选择
   - DOMAIN-SUFFIX,wiktionary.org,🚀 节点选择
+  - DOMAIN-SUFFIX,zoom.us,🚀 节点选择
+  - DOMAIN-SUFFIX,zoomgov.com,🚀 节点选择
   - DOMAIN-SUFFIX,neulion.com,🚀 节点选择
   - DOMAIN-SUFFIX,icntv.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,flzbcdn.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
   - DOMAIN-SUFFIX,vikacg.com,🚀 节点选择
   - DOMAIN-SUFFIX,picjs.xyz,🚀 节点选择
-# 直连列表
-# MyList
-# CN域名直连(中国|公司|网络)
-# 中国国内常见域名关键词直连
-# 360
-# 4399
-# 58
-# Alibaba
-# Baidu
-# Bilibili
-# Blizzard
-# ByteDance
-# CCTV
-# ChinaNet
-# DiDi
-# Douyu 斗鱼
-# Epic
-# HuaWei
-# Iflytek 科大讯飞
-# Iqiyi
-# JD
-# Kingsoft
-# Kuaishou 快手
-# Meitu
-# LeTV 乐视
-# MGTV 芒果TV
-# MI
-# NetEase
-# PPTV、PPLive
-# PDD 拼多多
-# Sina
-# Sohu Sogo
-# Sony
-# SteamCN
-# Tencent
-# Vip 唯品会
-# Ximalaya 喜马拉雅
-# Xunlei 迅雷
-# YYeTs 人人影视
-# Private Tracker
-# TeamViewer
-# Public Direct CDN 公共直连
-#DOMAIN-SUFFIX,ajax.aspnetcdn.com
-#DOMAIN-SUFFIX,ajax.cloudflare.com
-#DOMAIN-SUFFIX,cdnjs.cloudflare.com
-#DOMAIN-SUFFIX,code.jquery.com
-# AccelerateDirectSites
   - DOMAIN-SUFFIX,13th.tech,🎯 全球直连
   - DOMAIN-SUFFIX,423down.com,🎯 全球直连
   - DOMAIN-SUFFIX,bokecc.com,🎯 全球直连
@@ -4767,11 +3188,12 @@ rules:
   - DOMAIN-SUFFIX,pdfwifi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhenguanyu.biz,🎯 全球直连
   - DOMAIN-SUFFIX,zhenguanyu.com,🎯 全球直连
+  - DOMAIN-SUFFIX,snapdrop.net,🎯 全球直连
+  - DOMAIN-SUFFIX,tebex.io,🎯 全球直连
   - DOMAIN-SUFFIX,cn,🎯 全球直连
   - DOMAIN-SUFFIX,xn--fiqs8s,🎯 全球直连
   - DOMAIN-SUFFIX,xn--55qx5d,🎯 全球直连
   - DOMAIN-SUFFIX,xn--io0a7i,🎯 全球直连
-  - DOMAIN-KEYWORD,-cn,🎯 全球直连
   - DOMAIN-KEYWORD,360buy,🎯 全球直连
   - DOMAIN-KEYWORD,alicdn,🎯 全球直连
   - DOMAIN-KEYWORD,alimama,🎯 全球直连
@@ -4805,6 +3227,7 @@ rules:
   - DOMAIN-SUFFIX,aliapp.org,🎯 全球直连
   - DOMAIN-SUFFIX,alibaba.com,🎯 全球直连
   - DOMAIN-SUFFIX,alibabacloud.com,🎯 全球直连
+  - DOMAIN-SUFFIX,alibabachengdun.com,🎯 全球直连
   - DOMAIN-SUFFIX,alibabausercontent.com,🎯 全球直连
   - DOMAIN-SUFFIX,alicdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,alicloudccp.com,🎯 全球直连
@@ -4818,10 +3241,12 @@ rules:
   - DOMAIN-SUFFIX,aliyuncdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,aliyuncs.com,🎯 全球直连
   - DOMAIN-SUFFIX,aliyundrive.com,🎯 全球直连
+  - DOMAIN-SUFFIX,aliyundrive.net,🎯 全球直连
   - DOMAIN-SUFFIX,amap.com,🎯 全球直连
   - DOMAIN-SUFFIX,autonavi.com,🎯 全球直连
   - DOMAIN-SUFFIX,dingtalk.com,🎯 全球直连
   - DOMAIN-SUFFIX,ele.me,🎯 全球直连
+  - DOMAIN-SUFFIX,elemecdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,hichina.com,🎯 全球直连
   - DOMAIN-SUFFIX,mmstat.com,🎯 全球直连
   - DOMAIN-SUFFIX,mxhichina.com,🎯 全球直连
@@ -4829,6 +3254,7 @@ rules:
   - DOMAIN-SUFFIX,taobao.com,🎯 全球直连
   - DOMAIN-SUFFIX,taobaocdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,tbcache.com,🎯 全球直连
+  - DOMAIN-SUFFIX,tbcdn.cn,🎯 全球直连
   - DOMAIN-SUFFIX,tbcdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,tmall.com,🎯 全球直连
   - DOMAIN-SUFFIX,tmall.hk,🎯 全球直连
@@ -4837,6 +3263,7 @@ rules:
   - DOMAIN-SUFFIX,xiami.net,🎯 全球直连
   - DOMAIN-SUFFIX,ykimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,youku.com,🎯 全球直连
+  - DOMAIN-SUFFIX,qwen.ai,🎯 全球直连
   - DOMAIN-SUFFIX,baidu.com,🎯 全球直连
   - DOMAIN-SUFFIX,baidubcr.com,🎯 全球直连
   - DOMAIN-SUFFIX,baidupcs.com,🎯 全球直连
@@ -4857,6 +3284,8 @@ rules:
   - DOMAIN-SUFFIX,biliapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,biliapi.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilibili.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bilibili.co,🎯 全球直连
+  - DOMAIN-SUFFIX,biliintl.co,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.com,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilivideo.com,🎯 全球直连
@@ -4864,9 +3293,6 @@ rules:
   - DOMAIN-SUFFIX,hdslb.com,🎯 全球直连
   - DOMAIN-SUFFIX,im9.com,🎯 全球直连
   - DOMAIN-SUFFIX,smtcdns.net,🎯 全球直连
-  - DOMAIN-SUFFIX,battle.net,🎯 全球直连
-  - DOMAIN-SUFFIX,battlenet.com,🎯 全球直连
-  - DOMAIN-SUFFIX,blizzard.com,🎯 全球直连
   - DOMAIN-SUFFIX,amemv.com,🎯 全球直连
   - DOMAIN-SUFFIX,bdxiguaimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,bdxiguastatic.com,🎯 全球直连
@@ -4881,6 +3307,7 @@ rules:
   - DOMAIN-SUFFIX,bytetos.com,🎯 全球直连
   - DOMAIN-SUFFIX,bytexservice.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyin.com,🎯 全球直连
+  - DOMAIN-SUFFIX,douyincdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyinpic.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyinstatic.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyinvod.com,🎯 全球直连
@@ -4913,12 +3340,31 @@ rules:
   - DOMAIN-SUFFIX,cctv.com,🎯 全球直连
   - DOMAIN-SUFFIX,cctvpic.com,🎯 全球直连
   - DOMAIN-SUFFIX,livechina.com,🎯 全球直连
+  - DOMAIN,auth.wosms.cn,🎯 全球直连
+  - DOMAIN,config.cmpassport.com,🎯 全球直连
+  - DOMAIN,enrichgw.10010.com,🎯 全球直连
+  - DOMAIN,hmrz.wo.cn,🎯 全球直连
+  - DOMAIN,id.mail.wo.cn,🎯 全球直连
+  - DOMAIN,log.cmpassport.com,🎯 全球直连
+  - DOMAIN,log1.cmpassport.com,🎯 全球直连
+  - DOMAIN,mdn.open.wo.cn,🎯 全球直连
+  - DOMAIN,nishub1.10010.com,🎯 全球直连
+  - DOMAIN,opencloud.wostore.cn,🎯 全球直连
+  - DOMAIN,ye.dun.163yun.com,🎯 全球直连
+  - DOMAIN-SUFFIX,auth.wo.cn,🎯 全球直连
+  - DOMAIN-SUFFIX,cmpassport.com,🎯 全球直连
+  - DOMAIN-SUFFIX,id6.me,🎯 全球直连
+  - DOMAIN-SUFFIX,mob.com,🎯 全球直连
+  - DOMAIN-SUFFIX,open.e.189.cn,🎯 全球直连
   - DOMAIN-SUFFIX,21cn.com,🎯 全球直连
   - DOMAIN-SUFFIX,didialift.com,🎯 全球直连
   - DOMAIN-SUFFIX,didiglobal.com,🎯 全球直连
   - DOMAIN-SUFFIX,udache.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bytefcdnrd.com,🎯 全球直连
+  - DOMAIN-SUFFIX,edgesrv.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyu.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyu.tv,🎯 全球直连
+  - DOMAIN-SUFFIX,douyucdn.cn,🎯 全球直连
   - DOMAIN-SUFFIX,douyuscdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyutv.com,🎯 全球直连
   - DOMAIN-SUFFIX,epicgames.com,🎯 全球直连
@@ -4929,12 +3375,25 @@ rules:
   - DOMAIN-SUFFIX,dbankcdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,hc-cdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,hicloud.com,🎯 全球直连
+  - DOMAIN-SUFFIX,hihonor.com,🎯 全球直连
   - DOMAIN-SUFFIX,huawei.com,🎯 全球直连
   - DOMAIN-SUFFIX,huaweicloud.com,🎯 全球直连
   - DOMAIN-SUFFIX,huaweishop.net,🎯 全球直连
   - DOMAIN-SUFFIX,hwccpc.com,🎯 全球直连
   - DOMAIN-SUFFIX,vmall.com,🎯 全球直连
   - DOMAIN-SUFFIX,vmallres.com,🎯 全球直连
+  - DOMAIN-SUFFIX,allawnfs.com,🎯 全球直连
+  - DOMAIN-SUFFIX,allawno.com,🎯 全球直连
+  - DOMAIN-SUFFIX,allawntech.com,🎯 全球直连
+  - DOMAIN-SUFFIX,coloros.com,🎯 全球直连
+  - DOMAIN-SUFFIX,heytap.com,🎯 全球直连
+  - DOMAIN-SUFFIX,heytapcs.com,🎯 全球直连
+  - DOMAIN-SUFFIX,heytapdownload.com,🎯 全球直连
+  - DOMAIN-SUFFIX,heytapimage.com,🎯 全球直连
+  - DOMAIN-SUFFIX,heytapmobi.com,🎯 全球直连
+  - DOMAIN-SUFFIX,oppo.com,🎯 全球直连
+  - DOMAIN-SUFFIX,oppoer.me,🎯 全球直连
+  - DOMAIN-SUFFIX,oppomobile.com,🎯 全球直连
   - DOMAIN-SUFFIX,iflyink.com,🎯 全球直连
   - DOMAIN-SUFFIX,iflyrec.com,🎯 全球直连
   - DOMAIN-SUFFIX,iflytek.com,🎯 全球直连
@@ -5034,6 +3493,7 @@ rules:
   - DOMAIN,st.dl.bscstorage.net,🎯 全球直连
   - DOMAIN,st.dl.eccdnx.com,🎯 全球直连
   - DOMAIN,st.dl.pinyuncloud.com,🎯 全球直连
+  - DOMAIN,xz.pphimalayanrt.com,🎯 全球直连
   - DOMAIN,steampipe.steamcontent.tnkjmec.com,🎯 全球直连
   - DOMAIN,steampowered.com.8686c.com,🎯 全球直连
   - DOMAIN,steamstatic.com.8686c.com,🎯 全球直连
@@ -5085,46 +3545,7 @@ rules:
   - DOMAIN-SUFFIX,zmzapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zmzapi.net,🎯 全球直连
   - DOMAIN-SUFFIX,zmzfile.com,🎯 全球直连
-  - DOMAIN-KEYWORD,announce,🎯 全球直连
-  - DOMAIN-KEYWORD,torrent,🎯 全球直连
-  - DOMAIN-KEYWORD,tracker,🎯 全球直连
-  - DOMAIN-SUFFIX,animebytes.tv,🎯 全球直连
-  - DOMAIN-SUFFIX,animetorrents.me,🎯 全球直连
-  - DOMAIN-SUFFIX,awesome-hd.me,🎯 全球直连
-  - DOMAIN-SUFFIX,beitai.pt,🎯 全球直连
-  - DOMAIN-SUFFIX,bittorrent.com,🎯 全球直连
-  - DOMAIN-SUFFIX,broadcasthe.net,🎯 全球直连
-  - DOMAIN-SUFFIX,chdbits.co,🎯 全球直连
-  - DOMAIN-SUFFIX,classix-unlimited.co.uk,🎯 全球直连
-  - DOMAIN-SUFFIX,empornium.me,🎯 全球直连
-  - DOMAIN-SUFFIX,gazellegames.net,🎯 全球直连
-  - DOMAIN-SUFFIX,hd4fans.org,🎯 全球直连
-  - DOMAIN-SUFFIX,hdchina.org,🎯 全球直连
-  - DOMAIN-SUFFIX,hdhome.org,🎯 全球直连
-  - DOMAIN-SUFFIX,hdsky.me,🎯 全球直连
-  - DOMAIN-SUFFIX,hdtime.org,🎯 全球直连
-  - DOMAIN-SUFFIX,hdzone.me,🎯 全球直连
-  - DOMAIN-SUFFIX,icetorrent.org,🎯 全球直连
-  - DOMAIN-SUFFIX,jpopsuki.eu,🎯 全球直连
-  - DOMAIN-SUFFIX,keepfrds.com,🎯 全球直连
-  - DOMAIN-SUFFIX,leaguehd.com,🎯 全球直连
-  - DOMAIN-SUFFIX,m-team.cc,🎯 全球直连
-  - DOMAIN-SUFFIX,madsrevolution.net,🎯 全球直连
-  - DOMAIN-SUFFIX,msg.vg,🎯 全球直连
-  - DOMAIN-SUFFIX,nanyangpt.com,🎯 全球直连
-  - DOMAIN-SUFFIX,ncore.cc,🎯 全球直连
-  - DOMAIN-SUFFIX,open.cd,🎯 全球直连
-  - DOMAIN-SUFFIX,ourbits.club,🎯 全球直连
-  - DOMAIN-SUFFIX,passthepopcorn.me,🎯 全球直连
-  - DOMAIN-SUFFIX,privatehd.to,🎯 全球直连
-  - DOMAIN-SUFFIX,pthome.net,🎯 全球直连
-  - DOMAIN-SUFFIX,redacted.ch,🎯 全球直连
-  - DOMAIN-SUFFIX,springsunday.net,🎯 全球直连
-  - DOMAIN-SUFFIX,tjupt.org,🎯 全球直连
-  - DOMAIN-SUFFIX,totheglory.im,🎯 全球直连
-  - DOMAIN-SUFFIX,trontv.com,🎯 全球直连
   - DOMAIN-SUFFIX,teamviewer.com,🎯 全球直连
-  - IP-CIDR,109.239.140.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,139.220.243.27/32,🎯 全球直连,no-resolve
   - IP-CIDR,172.16.102.56/32,🎯 全球直连,no-resolve
   - IP-CIDR,185.188.32.1/28,🎯 全球直连,no-resolve
@@ -5138,6 +3559,10 @@ rules:
   - DOMAIN-SUFFIX,jiasule.com,🎯 全球直连
   - DOMAIN-SUFFIX,staticfile.org,🎯 全球直连
   - DOMAIN-SUFFIX,upaiyun.com,🎯 全球直连
+  - DOMAIN-SUFFIX,doh.pub,🎯 全球直连
+  - DOMAIN-SUFFIX,dns.alidns.com,🎯 全球直连
+  - DOMAIN-SUFFIX,doh.360.cn,🎯 全球直连
+  - IP-CIDR,1.12.12.12/32,🎯 全球直连,no-resolve
   - DOMAIN-SUFFIX,10010.com,🎯 全球直连
   - DOMAIN-SUFFIX,115.com,🎯 全球直连
   - DOMAIN-SUFFIX,12306.com,🎯 全球直连
@@ -5159,6 +3584,7 @@ rules:
   - DOMAIN-SUFFIX,air-matters.io,🎯 全球直连
   - DOMAIN-SUFFIX,aixifan.com,🎯 全球直连
   - DOMAIN-SUFFIX,algocasts.io,🎯 全球直连
+  - DOMAIN-SUFFIX,asklink.com,🎯 全球直连
   - DOMAIN-SUFFIX,babytree.com,🎯 全球直连
   - DOMAIN-SUFFIX,babytreeimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,baicizhan.com,🎯 全球直连
@@ -5167,6 +3593,7 @@ rules:
   - DOMAIN-SUFFIX,biqudu.com,🎯 全球直连
   - DOMAIN-SUFFIX,biquge.com,🎯 全球直连
   - DOMAIN-SUFFIX,bitauto.com,🎯 全球直连
+  - DOMAIN-SUFFIX,bosszhipin.com,🎯 全球直连
   - DOMAIN-SUFFIX,c-ctrip.com,🎯 全球直连
   - DOMAIN-SUFFIX,camera360.com,🎯 全球直连
   - DOMAIN-SUFFIX,cdnmama.com,🎯 全球直连
@@ -5202,6 +3629,7 @@ rules:
   - DOMAIN-SUFFIX,eastday.com,🎯 全球直连
   - DOMAIN-SUFFIX,eastmoney.com,🎯 全球直连
   - DOMAIN-SUFFIX,ecitic.com,🎯 全球直连
+  - DOMAIN-SUFFIX,element-plus.org,🎯 全球直连
   - DOMAIN-SUFFIX,ewqcxz.com,🎯 全球直连
   - DOMAIN-SUFFIX,fang.com,🎯 全球直连
   - DOMAIN-SUFFIX,fantasy.tv,🎯 全球直连
@@ -5245,6 +3673,7 @@ rules:
   - DOMAIN-SUFFIX,kaola.com,🎯 全球直连
   - DOMAIN-SUFFIX,knewone.com,🎯 全球直连
   - DOMAIN-SUFFIX,koowo.com,🎯 全球直连
+  - DOMAIN-SUFFIX,koyso.com,🎯 全球直连
   - DOMAIN-SUFFIX,ksyungslb.com,🎯 全球直连
   - DOMAIN-SUFFIX,kuaidi100.com,🎯 全球直连
   - DOMAIN-SUFFIX,kugou.com,🎯 全球直连
@@ -5280,6 +3709,7 @@ rules:
   - DOMAIN-SUFFIX,nruan.com,🎯 全球直连
   - DOMAIN-SUFFIX,nuomi.com,🎯 全球直连
   - DOMAIN-SUFFIX,onedns.net,🎯 全球直连
+  - DOMAIN-SUFFIX,oneplus.com,🎯 全球直连
   - DOMAIN-SUFFIX,onlinedown.net,🎯 全球直连
   - DOMAIN-SUFFIX,oracle.com,🎯 全球直连
   - DOMAIN-SUFFIX,oschina.net,🎯 全球直连
@@ -5302,6 +3732,7 @@ rules:
   - DOMAIN-SUFFIX,quanmin.tv,🎯 全球直连
   - DOMAIN-SUFFIX,qunar.com,🎯 全球直连
   - DOMAIN-SUFFIX,qunarzz.com,🎯 全球直连
+  - DOMAIN-SUFFIX,realme.com,🎯 全球直连
   - DOMAIN-SUFFIX,repaik.com,🎯 全球直连
   - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
   - DOMAIN-SUFFIX,runoob.com,🎯 全球直连
@@ -5335,6 +3766,7 @@ rules:
   - DOMAIN-SUFFIX,upyun.com,🎯 全球直连
   - DOMAIN-SUFFIX,uxengine.net,🎯 全球直连
   - DOMAIN-SUFFIX,videocc.net,🎯 全球直连
+  - DOMAIN-SUFFIX,vivo.com,🎯 全球直连
   - DOMAIN-SUFFIX,wandoujia.com,🎯 全球直连
   - DOMAIN-SUFFIX,weather.com,🎯 全球直连
   - DOMAIN-SUFFIX,weico.cc,🎯 全球直连
@@ -5371,76 +3803,101 @@ rules:
   - DOMAIN-SUFFIX,zhaopin.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhihu.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhimg.com,🎯 全球直连
+  - DOMAIN-SUFFIX,zhipin.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhongsou.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhuihd.com,🎯 全球直连
-# 中国云服务商ip端
-# 阿里
-# 腾讯 qq
-# 百度 Baidu
-# 华为 huwei
-# 网易 NetEase
-# 360
+  - DOMAIN-SUFFIX,cmbchina.com,🎯 全球直连
+  - DOMAIN-SUFFIX,95516.com,🎯 全球直连
   - IP-CIDR,8.128.0.0/10,🎯 全球直连,no-resolve
-  - IP-CIDR,8.208.0.0/12,🎯 全球直连,no-resolve
+  - IP-CIDR,8.209.32.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,8.209.40.0/21,🎯 全球直连,no-resolve
+  - IP-CIDR,8.209.48.0/20,🎯 全球直连,no-resolve
+  - IP-CIDR,8.210.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,8.211.64.0/18,🎯 全球直连,no-resolve
+  - IP-CIDR,8.211.128.0/20,🎯 全球直连,no-resolve
+  - IP-CIDR,8.211.144.0/21,🎯 全球直连,no-resolve
+  - IP-CIDR,8.211.152.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,8.211.208.0/20,🎯 全球直连,no-resolve
+  - IP-CIDR,8.211.224.0/19,🎯 全球直连,no-resolve
+  - IP-CIDR,8.212.0.0/14,🎯 全球直连,no-resolve
+  - IP-CIDR,8.216.0.0/13,🎯 全球直连,no-resolve
   - IP-CIDR,14.1.112.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,41.222.240.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,41.223.119.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,43.242.168.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,45.112.212.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,47.52.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,47.56.0.0/15,🎯 全球直连,no-resolve
-  - IP-CIDR,47.74.0.0/15,🎯 全球直连,no-resolve
-  - IP-CIDR,47.76.0.0/14,🎯 全球直连,no-resolve
-  - IP-CIDR,47.80.0.0/12,🎯 全球直连,no-resolve
-  - IP-CIDR,47.235.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,47.236.0.0/14,🎯 全球直连,no-resolve
-  - IP-CIDR,47.240.0.0/14,🎯 全球直连,no-resolve
-  - IP-CIDR,47.244.0.0/15,🎯 全球直连,no-resolve
-  - IP-CIDR,47.246.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,47.250.0.0/15,🎯 全球直连,no-resolve
-  - IP-CIDR,47.252.0.0/15,🎯 全球直连,no-resolve
-  - IP-CIDR,47.254.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,47.75.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,47.89.0.0/18,🎯 全球直连,no-resolve
+  - IP-CIDR,47.89.64.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,47.89.82.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,47.89.91.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,47.89.100.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,47.90.0.0/17,🎯 全球直连,no-resolve
+  - IP-CIDR,47.91.128.0/17,🎯 全球直连,no-resolve
+  - IP-CIDR,47.92.0.0/14,🎯 全球直连,no-resolve
+  - IP-CIDR,47.240.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,47.242.0.0/15,🎯 全球直连,no-resolve
+  - IP-CIDR,47.244.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,47.246.5.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,47.246.16.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,47.246.60.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,47.246.65.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,59.82.0.0/20,🎯 全球直连,no-resolve
   - IP-CIDR,59.82.240.0/21,🎯 全球直连,no-resolve
   - IP-CIDR,59.82.248.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,72.254.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,103.38.56.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,103.52.76.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,103.206.40.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,110.76.21.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,110.76.23.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,112.125.0.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,116.251.64.0/18,🎯 全球直连,no-resolve
+  - IP-CIDR,116.251.79.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,116.251.80.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,116.251.84.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,116.251.88.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,116.251.93.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,116.251.94.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,116.251.102.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,116.251.104.0/21,🎯 全球直连,no-resolve
+  - IP-CIDR,116.251.112.0/21,🎯 全球直连,no-resolve
+  - IP-CIDR,116.251.124.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,119.38.208.0/20,🎯 全球直连,no-resolve
   - IP-CIDR,119.38.224.0/20,🎯 全球直连,no-resolve
   - IP-CIDR,119.42.224.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,139.95.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,140.205.1.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,140.205.122.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,147.139.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,149.129.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,155.102.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,161.117.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,163.181.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,170.33.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,198.11.128.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,205.204.96.0/19,🎯 全球直连,no-resolve
-  - IP-CIDR,19.28.0.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,149.129.64.0/18,🎯 全球直连,no-resolve
+  - IP-CIDR,163.181.32.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,163.181.40.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,170.33.0.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,198.11.141.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,198.11.184.0/21,🎯 全球直连,no-resolve
+  - IP-CIDR,205.204.104.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,205.204.117.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,205.204.122.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,205.204.124.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,45.40.192.0/19,🎯 全球直连,no-resolve
-  - IP-CIDR,49.51.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,49.51.56.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,49.51.60.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,49.51.110.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,49.51.112.0/20,🎯 全球直连,no-resolve
   - IP-CIDR,62.234.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,94.191.0.0/17,🎯 全球直连,no-resolve
   - IP-CIDR,103.7.28.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,103.116.50.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,103.231.60.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,109.244.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,111.30.128.0/21,🎯 全球直连,no-resolve
   - IP-CIDR,111.30.136.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,111.30.139.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,111.30.140.0/23,🎯 全球直连,no-resolve
   - IP-CIDR,115.159.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,119.28.0.0/15,🎯 全球直连,no-resolve
-  - IP-CIDR,120.88.56.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,119.28.0.0/18,🎯 全球直连,no-resolve
+  - IP-CIDR,119.28.64.0/19,🎯 全球直连,no-resolve
+  - IP-CIDR,119.28.124.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,119.28.128.0/20,🎯 全球直连,no-resolve
+  - IP-CIDR,119.28.164.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,119.28.168.0/21,🎯 全球直连,no-resolve
+  - IP-CIDR,119.28.176.0/20,🎯 全球直连,no-resolve
+  - IP-CIDR,119.28.192.0/19,🎯 全球直连,no-resolve
+  - IP-CIDR,119.28.224.0/21,🎯 全球直连,no-resolve
+  - IP-CIDR,119.29.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,121.51.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,129.28.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,129.204.0.0/16,🎯 全球直连,no-resolve
@@ -5448,61 +3905,46 @@ rules:
   - IP-CIDR,132.232.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,134.175.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,146.56.192.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,148.70.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,150.109.0.0/16,🎯 全球直连,no-resolve
+  - IP-CIDR,150.109.32.0/19,🎯 全球直连,no-resolve
+  - IP-CIDR,150.109.64.0/20,🎯 全球直连,no-resolve
+  - IP-CIDR,150.109.96.0/19,🎯 全球直连,no-resolve
   - IP-CIDR,152.136.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,162.14.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,162.62.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,170.106.130.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,182.254.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,188.131.128.0/17,🎯 全球直连,no-resolve
   - IP-CIDR,203.195.128.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,203.205.128.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,210.4.138.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,211.152.128.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,211.152.132.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,211.152.148.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,203.205.128.0/20,🎯 全球直连,no-resolve
+  - IP-CIDR,203.205.144.0/21,🎯 全球直连,no-resolve
+  - IP-CIDR,203.205.158.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,203.205.180.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,203.205.208.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,203.205.212.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,203.205.218.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,203.205.220.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,203.205.248.0/21,🎯 全球直连,no-resolve
   - IP-CIDR,212.64.0.0/17,🎯 全球直连,no-resolve
   - IP-CIDR,212.129.128.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,45.113.192.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,63.217.23.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,45.113.194.0/23,🎯 全球直连,no-resolve
   - IP-CIDR,63.243.252.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,103.235.44.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,104.193.88.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,106.12.0.0/15,🎯 全球直连,no-resolve
   - IP-CIDR,114.28.224.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,119.63.192.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,180.76.0.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,180.76.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,182.61.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,185.10.104.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,185.10.105.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,202.46.48.0/20,🎯 全球直连,no-resolve
   - IP-CIDR,203.90.238.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,43.254.0.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,45.249.212.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,49.4.0.0/17,🎯 全球直连,no-resolve
-  - IP-CIDR,78.101.192.0/19,🎯 全球直连,no-resolve
-  - IP-CIDR,78.101.224.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,81.52.161.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,85.97.220.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,103.31.200.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,103.69.140.0/23,🎯 全球直连,no-resolve
   - IP-CIDR,103.218.216.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,114.115.128.0/17,🎯 全球直连,no-resolve
   - IP-CIDR,114.116.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,116.63.128.0/18,🎯 全球直连,no-resolve
   - IP-CIDR,116.66.184.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,116.71.96.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,116.71.128.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,116.71.136.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,116.71.141.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,116.71.142.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,116.71.243.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,116.71.244.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,116.71.251.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,117.78.0.0/18,🎯 全球直连,no-resolve
   - IP-CIDR,119.3.0.0/16,🎯 全球直连,no-resolve
-  - IP-CIDR,119.8.0.0/21,🎯 全球直连,no-resolve
   - IP-CIDR,119.8.32.0/19,🎯 全球直连,no-resolve
   - IP-CIDR,121.36.0.0/17,🎯 全球直连,no-resolve
   - IP-CIDR,121.36.128.0/18,🎯 全球直连,no-resolve
@@ -5531,37 +3973,7 @@ rules:
   - IP-CIDR,159.138.96.0/20,🎯 全球直连,no-resolve
   - IP-CIDR,159.138.112.0/21,🎯 全球直连,no-resolve
   - IP-CIDR,159.138.125.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,159.138.128.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,159.138.192.0/20,🎯 全球直连,no-resolve
-  - IP-CIDR,159.138.223.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,159.138.224.0/19,🎯 全球直连,no-resolve
-  - IP-CIDR,168.195.92.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,185.176.76.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,197.199.0.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,197.210.163.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,197.252.1.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,197.252.2.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,197.252.4.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,197.252.8.0/21,🎯 全球直连,no-resolve
-  - IP-CIDR,200.32.52.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,200.32.54.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,200.32.57.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.0.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.4.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.8.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.11.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.13.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.20.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.22.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.24.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.26.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.29.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.33.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.38.0/23,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.40.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.43.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.48.0/24,🎯 全球直连,no-resolve
-  - IP-CIDR,203.135.50.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,159.138.128.0/19,🎯 全球直连,no-resolve
   - IP-CIDR,42.186.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,45.127.128.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,45.195.24.0/24,🎯 全球直连,no-resolve
@@ -5585,7 +3997,6 @@ rules:
   - IP-CIDR,103.72.128.0/21,🎯 全球直连,no-resolve
   - IP-CIDR,103.74.24.0/21,🎯 全球直连,no-resolve
   - IP-CIDR,103.74.48.0/22,🎯 全球直连,no-resolve
-  - IP-CIDR,103.126.92.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,103.129.252.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,103.131.252.0/22,🎯 全球直连,no-resolve
   - IP-CIDR,103.135.240.0/22,🎯 全球直连,no-resolve
@@ -5599,7 +4010,11 @@ rules:
   - IP-CIDR,123.58.160.0/19,🎯 全球直连,no-resolve
   - IP-CIDR,223.252.192.0/19,🎯 全球直连,no-resolve
   - IP-CIDR,101.198.128.0/18,🎯 全球直连,no-resolve
-  - IP-CIDR,101.198.192.0/19,🎯 全球直连,no-resolve
+  - IP-CIDR,101.198.192.0/24,🎯 全球直连,no-resolve
+  - IP-CIDR,101.198.194.0/23,🎯 全球直连,no-resolve
+  - IP-CIDR,101.198.196.0/22,🎯 全球直连,no-resolve
+  - IP-CIDR,101.198.200.0/21,🎯 全球直连,no-resolve
+  - IP-CIDR,101.198.208.0/20,🎯 全球直连,no-resolve
   - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
